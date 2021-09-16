@@ -1,0 +1,133 @@
+/* == person == */
+
+a {
+    color: #fff;
+}
+
+.detail #content .movie-image>img {
+    border-radius: 5px;
+    margin-bottom: 30px
+}
+
+.rating {
+    margin-top: -2px;
+}
+
+.detail #content .movie-info .movie-data span i {
+    padding-right: 1px;
+    margin-right: 5px
+}
+
+#content>div.inner-container>div.movie-info>h1>span {
+    margin-left: 10px
+}
+
+.detail #content .movie-info p {
+    color: rgba(255, 255, 255, 0.71);
+    font-size: 16px;
+    line-height: 1.5em;
+    padding-top: 5px!important;
+}
+
+.plot {
+    max-height: 110px !important;
+    overflow: hidden !important;
+    position: relative
+}
+
+.detail #content .movie-info .movie-data {
+    margin-bottom: 10px
+}
+
+#birth {
+    margin-left: 0;
+}
+
+.detail #content .movie-image>img {
+    margin-bottom: 10px;
+}
+
+.plot.ps-container.ps-active-y > p {
+    margin-left: 20px
+}
+
+.actors {
+    margin-top: 25px
+}
+
+.actors .actor {
+    float: left;
+    margin-right: 5px;
+    padding: 3px
+}
+
+.actors .crew {
+    text-align: center;
+    float: left;
+    margin-right: 10px;
+    padding: 3px
+}
+
+.detail #content .movie-background {
+    margin: auto !important;
+    position: fixed;
+    top: -40%;
+    width: 100%;
+    max-width: 1500px;
+    height: auto;
+    opacity: .2;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.detail #content .movie-info h1 {
+    padding-bottom: 10px;
+}
+
+.actors img {
+    position: relative;
+    height: 75px;
+    width: 52px;
+    opacity: .7;
+    border-radius: 4px;
+    -webkit-transition: opacity .4s linear, -webkit-transform .4s ease-in-out, box-shadow .4s ease-in-out
+}
+
+.actors img:hover {
+    -webkit-transform: scale(2.05);
+    -moz-transform: scale(2.05);
+    -ms-transform: scale(2.05);
+    -o-transform: scale(2.05);
+    transform: scale(2.05);
+    z-index: 100;
+    opacity: 1
+}
+
+@media (max-width: 600px) {
+    .detail #content .movie-info .actors img {
+        width: 65px;
+        height: 98px
+    }
+
+    .plot {
+        max-height: 300px !important;
+        overflow: hidden !important;
+        position: relative
+    }
+
+    .detail #content .movie-info .movie-data span {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 481px) {
+    #content>div.inner-container>div.movie-info>span {
+        display: none !important
+    }
+
+    #content>div.inner-container>div.movie-info>h1 {
+        margin-left: 0;
+    }
+}
+
+

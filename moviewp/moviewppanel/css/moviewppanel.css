@@ -1,0 +1,816 @@
+/*
+* ----------------------------------------------------
+* @author: fr0zen
+* @author URI: https://sellix.io/fr0zen
+* @copyright: (c) 2021 Vincenzo Piromalli. All rights reserved
+* ----------------------------------------------------
+* @since 3.8.4
+*/
+
+
+/*====================================*\
+	GLOBALS
+\*====================================*/
+
+.hide {
+	display: none;	
+}
+
+/*====================================*\
+	MAIN
+\*====================================*/
+
+/*	container */
+.moviewppanel-container {
+	color: #666;
+	padding: 20px 20px 20px 0;
+	display: table;
+	width: 100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/*	columns */
+.moviewppanel-column {
+	display: table-cell;
+	vertical-align: top;		
+}
+.moviewppanel-column.moviewppanel-column-sticky {
+	width: 250px;	
+}
+.moviewppanel-column + .moviewppanel-column .moviewppanel-box {
+	margin-left: 20px;	
+}
+
+/*	box */
+.moviewppanel-box {
+	background-color: #fff;
+	border: 1px solid #e5e5e5;
+	padding: 20px;	
+}
+.moviewppanel-box.moviewppanel-error {
+	border-left: 5px solid #000000;
+	padding: 6px 20px 7px;
+	color: #000000;
+	font-size: 14px;
+	line-height: 18px;
+	font-weight: 500;	
+}
+.moviewppanel-box.moviewppanel-updated {
+	border-left: 5px solid #298eea;
+	padding: 6px 20px 7px;
+	color: #298eea;
+	font-size: 14px;
+	line-height: 18px;
+	font-weight: 500;	
+}
+.moviewppanel-box + .moviewppanel-box {
+	margin-top: 20px;	
+}
+.moviewppanel-column.moviewppanel-column-sticky .moviewppanel-box {
+	padding: 0;	
+}
+
+/*	logo */
+.moviewppanel-logo {
+	padding: 20px;
+	text-align: center;		
+}
+
+/*	navigation */
+.moviewppanel-navigation ul, .moviewppanel-navigation ul li {
+	margin: 0;
+	font-size: 14px;
+	line-height: 18px;	
+}
+.moviewppanel-navigation ul li {
+	border-top: 1px solid #e5e5e5;	
+}
+.moviewppanel-navigation ul li a {
+	position: relative;
+	display: block;
+	text-decoration: none;
+	color: #666;
+	padding: 19px 15px 23px 85px;
+	transition: background-color 0.2s ease, color 0.2s ease;
+	-webkit-transition: background-color 0.2s ease, color 0.2s ease;
+	-moz-transition: background-color 0.2s ease, color 0.2s ease;
+	-ms-transition: background-color 0.2s ease, color 0.2s ease;
+	-o-transition: background-color 0.2s ease, color 0.2s ease;	
+}
+.moviewppanel-navigation ul li a:hover, .moviewppanel-navigation ul li a.active {
+	background-color: #f5f5f5;	
+}
+.moviewppanel-navigation ul li a.moviewppanel-icon-nav-1:hover, .moviewppanel-navigation ul li a.moviewppanel-icon-nav-1.active {
+	color: #298eea;
+}
+.moviewppanel-navigation ul li a.moviewppanel-icon-nav-1:before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	width: 60px;
+	border-right: 1px solid #e5e5e5;
+	border-left: 5px solid #298eea;
+	content: '';
+	background-image:url(../images/icon-nav-1.png);
+	background-repeat: no-repeat;
+	background-position: center;	
+}
+.moviewppanel-navigation ul li a.moviewppanel-icon-nav-2:hover, .moviewppanel-navigation ul li a.moviewppanel-icon-nav-2.active {
+	color: #000000;
+}
+.moviewppanel-navigation ul li a.moviewppanel-icon-nav-2:before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	width: 60px;
+	border-right: 1px solid #e5e5e5;
+	border-left: 5px solid #000000;
+	content: '';
+	background-image:url(../images/icon-nav-2.png);
+	background-repeat: no-repeat;
+	background-position: center;	
+}
+.moviewppanel-navigation ul li a.moviewppanel-icon-nav-3:hover, .moviewppanel-navigation ul li a.moviewppanel-icon-nav-3.active {
+	color: #298eea;
+}
+.moviewppanel-navigation ul li a.moviewppanel-icon-nav-3:before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	width: 60px;
+	border-right: 1px solid #e5e5e5;
+	border-left: 5px solid #298eea;
+	content: '';
+	background-image:url(../images/icon-nav-3.png);
+	background-repeat: no-repeat;
+	background-position: center;	
+}
+.moviewppanel-navigation ul li a.moviewppanel-icon-nav-4:hover, .moviewppanel-navigation ul li a.moviewppanel-icon-nav-4.active {
+	color: #000000;
+}
+.moviewppanel-navigation ul li a.moviewppanel-icon-nav-4:before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	width: 60px;
+	border-right: 1px solid #e5e5e5;
+	border-left: 5px solid #000000;
+	content: '';
+	background-image:url(../images/icon-nav-4.png);
+	background-repeat: no-repeat;
+	background-position: center;	
+}
+.moviewppanel-navigation ul li a.moviewppanel-icon-nav-5:hover, .moviewppanel-navigation ul li a.moviewppanel-icon-nav-5.active {
+	color: #298eea;
+}
+.moviewppanel-navigation ul li a.moviewppanel-icon-nav-5:before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	width: 60px;
+	border-right: 1px solid #e5e5e5;
+	border-left: 5px solid #ea2929;
+	content: '';
+	background-image:url(../images/icon-nav-5.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.moviewppanel-navigation ul li a.moviewppanel-icon-nav-6:hover, .moviewppanel-navigation ul li a.moviewppanel-icon-nav-6.active {
+	color: #5a308d;
+}
+.moviewppanel-navigation ul li a.moviewppanel-icon-nav-6:before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	width: 60px;
+	border-right: 1px solid #e5e5e5;
+	border-left: 5px solid #5a308d;
+	content: '';
+	background-image:url(../images/icon-nav-6.png);
+	background-repeat: no-repeat;
+	background-position: center;	
+}
+.moviewppanel-navigation ul li a.moviewppanel-icon-nav-7:hover, .moviewppanel-navigation ul li a.moviewppanel-icon-nav-7.active {
+	color: #298eea;
+}
+.moviewppanel-navigation ul li a.moviewppanel-icon-nav-7:before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	width: 60px;
+	border-right: 1px solid #e5e5e5;
+	border-left: 5px solid #000000;
+	content: '';
+	background-image:url(../images/icon-nav-7.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.moviewppanel-navigation ul li a.moviewppanel-icon-comments-8:hover, .moviewppanel-navigation ul li a.moviewppanel-icon-comments-8.active {
+	color: #298eea;
+}
+.moviewppanel-navigation ul li a.moviewppanel-icon-comments-8:before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	width: 60px;
+	border-right: 1px solid #e5e5e5;
+	border-left: 5px solid #298eea;
+	content: '';
+	background-image:url(../images/icon-comments-8.png);
+	background-repeat: no-repeat;
+	background-position: center;	
+}
+
+.moviewppanel-navigation ul li a.moviewppanel-icon-nav-9:hover, .moviewppanel-navigation ul li a.moviewppanel-icon-nav-9.active {
+	color: #298eea;
+}
+.moviewppanel-navigation ul li a.moviewppanel-icon-nav-9:before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	width: 60px;
+	border-right: 1px solid #e5e5e5;
+	border-left: 5px solid #298eea;
+	content: '';
+	background-image:url(../images/icon-nav-9.png);
+	background-repeat: no-repeat;
+	background-position: center;	
+}
+
+.moviewppanel-navigation ul li a.moviewppanel-icon-nav-10:hover, .moviewppanel-navigation ul li a.moviewppanel-icon-nav-10.active {
+	color: #298eea;
+}
+.moviewppanel-navigation ul li a.moviewppanel-icon-nav-10:before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	width: 60px;
+	border-right: 1px solid #e5e5e5;
+	border-left: 5px solid #000000;
+	content: '';
+	background-image:url(../images/icon-nav-10.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+
+/*====================================*\
+	ELEMENTS - TEXT
+\*====================================*/
+
+.moviewppanel-box h2 {
+	font-size: 18px;
+	line-height: 18px;
+	font-weight: 700;
+	margin: 20px 0 0;
+	color: #434343;	
+}
+.moviewppanel-box h3 {
+	font-size: 14px;
+	line-height: 18px;
+	font-weight: 700;
+	margin: 20px 0 0;
+	color: #434343;	
+}
+.moviewppanel-box p, 
+.moviewppanel-box ul, 
+.moviewppanel-box ol {
+	font-size: 12px;
+	line-height: 18px;
+	margin: 20px 0 0;
+	color: #999;
+	list-style-position: inside;	
+}
+.moviewppanel-box hr {
+	height: 0;
+	border: 0;
+	background-color: transparent;
+	border-bottom: 1px solid #e5e5e5; 
+	display: block;
+	margin: 20px 0 0;	
+}
+.moviewppanel-box .helptext {
+	display: block;	
+}
+.moviewppanel-box .preview-file {
+	display: table;
+	margin-top: 16px;	
+}
+.moviewppanel-box .preview-file .cell {
+	display: table-cell;
+	vertical-align: middle;	
+}
+.moviewppanel-box .preview-file .moviewppanel-button-delete {
+	margin-left: 20px;	
+}
+.moviewppanel-box h2:first-child,
+.moviewppanel-box h3:first-child,
+.moviewppanel-box p:first-child,
+.moviewppanel-box ul:first-child,
+.moviewppanel-box ol:first-child,
+.moviewppanel-box hr:first-child {
+	margin-top: 0;	
+}
+
+/*====================================*\
+	ELEMENTS - FORM
+\*====================================*/
+
+/*	label */
+.moviewppanel-box label {
+	font-size: 14px;
+	line-height: 18px;
+	color: #434343;
+	vertical-align: top;
+	display: inline-block;
+	font-weight: 700;	
+}
+
+/*	license */
+.moviewppanel-box .flashit {
+    -webkit-animation: flash linear .5s infinite;
+    animation: flash linear .5s infinite;
+	font-size:20px;
+	color:#8be71f;
+}
+
+@-webkit-keyframes flash {
+    0% {
+        opacity: 1
+    }
+
+    50% {
+        opacity: .1
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+@keyframes flash {
+    0% {
+        opacity: 1
+    }
+
+    50% {
+        opacity: .1
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+.moviewppanel-box input[name=moviewppanel_license]{
+	color:#80808099;
+	cursor: not-allowed;
+}
+
+/*	checkbox, radio */
+.moviewppanel-box input[type=checkbox], 
+.moviewppanel-box input[type=radio] {
+	display: none;
+}
+.moviewppanel-box .checkbox, 
+.moviewppanel-box .radio {
+	font-weight: normal;
+	color: #666;
+}
+.moviewppanel-box .checkbox + .checkbox,
+.moviewppanel-box .checkbox + .radio, 
+.moviewppanel-box .radio + .radio,
+.moviewppanel-box .radio + .checkbox {
+	margin-left: 17px;
+}
+.moviewppanel-box .checkbox .mark, 
+.moviewppanel-box .radio .mark {
+	display: inline-block;
+	position: relative;
+	padding-left: 27px;
+	min-height: 20px;
+	background-repeat: no-repeat;
+}
+.moviewppanel-box .checkbox .mark:before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 18px;
+	height: 18px;
+	content: '';
+	border: 1px solid #e5e5e5;
+}
+.moviewppanel-box .checkbox input[type=checkbox]:checked + .mark {
+	background-image: url(../images/checkbox.png);
+	background-position: 3px 5px;	
+}
+.moviewppanel-box .radio .mark:before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 18px;
+	height: 18px;
+	content: '';
+	border: 1px solid #e5e5e5;
+	border-radius: 100%;
+	-webkit-border-radius: 100%;
+}
+.moviewppanel-box .radio input[type=radio]:checked + .mark {
+	background-image: url(../images/radio.png);
+	background-position: 5px 6px;	
+}
+
+/*	input, textarea */
+.moviewppanel-box input[type=text], 
+.moviewppanel-box input[type=password], 
+.moviewppanel-box textarea {
+	background-color: #fff;
+	border: 1px solid #e5e5e5;
+	color: #434343;
+	font-size: 14px;
+	padding: 6px 10px;
+	width: 100%;
+	margin: 0;
+	vertical-align: top;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	box-shadow: none;
+	-webkit-box-shadow: none;
+}
+.moviewppanel-box textarea {
+	height: 150px;
+	resize: none;
+}
+
+/*	file */
+.moviewppanel-input-file {
+	display: inline-block;
+	position: relative;
+	overflow: hidden;
+	vertical-align: top;
+	width: 100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;	
+}
+.moviewppanel-input-file .moviewppanel-button {
+	position: absolute;
+	right: 0;
+	top: 0;	
+}
+.moviewppanel-input-file input[type=file] {
+	position: absolute;
+	display: block;
+	right: 0;
+	top: 0;
+	z-index: 2;
+	cursor: pointer;
+	min-width: 100%;
+	min-height: 100%;
+	opacity: 0;
+	filter: alpha(opacity=0);	
+}
+
+/*	select */
+.moviewppanel-box .sbHolder {
+	display: inline-block;
+	background-color: #fff;
+	border: 1px solid #e5e5e5;
+	font-size: 14px;
+	line-height: 18px;
+	height: 32px;
+	width: 100%;
+	vertical-align: top;
+	position: relative;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.moviewppanel-box .sbHolder:focus .sbSelector {}
+.moviewppanel-box .sbSelector {
+	padding: 6px 10px;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 31px;
+	bottom: 0;
+	color: #434343;
+	text-decoration: none;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.moviewppanel-box .sbSelector:hover {}
+.moviewppanel-box .sbToggle {
+	width: 30px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	border-left: 1px solid #e5e5e5;
+	background-image: url(../images/select-arrow.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.moviewppanel-box .sbToggle:hover {}
+.moviewppanel-box .sbToggleOpen {}
+.moviewppanel-box .sbToggleOpen:hover {}
+.moviewppanel-box .sbHolderDisabled {}
+.moviewppanel-box .sbHolderDisabled .sbHolder {}
+.moviewppanel-box .sbHolderDisabled .sbToggle {}
+.moviewppanel-box .sbOptions {
+	background-color: #fff;
+	border: 1px solid #e5e5e5;
+	list-style: none;
+	font-size: 14px;
+	line-height: 18px;
+	font-weight: normal;
+	left: 0;
+	position: absolute;
+	top: 33px !important;
+	width: 100%;
+	z-index: 1;
+	overflow-y: auto;
+	margin: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+    max-height: 182px !important;
+}
+.moviewppanel-box .sbOptions li {
+	margin: 0;
+}
+.moviewppanel-box .sbOptions li a {
+	padding: 6px 10px;
+	display: block;
+	color: #434343;
+	text-decoration: none;
+}
+.moviewppanel-box .sbOptions a:hover, 
+.moviewppanel-box .sbOptions a:focus, 
+.moviewppanel-box .sbOptions a.sbFocus {
+	background-color: #f5f5f5;
+}
+.moviewppanel-box .sbOptions .sbDisabled {}
+.moviewppanel-box .sbOptions .sbGroup {}
+.moviewppanel-box .sbOptions .sbSub {}
+
+/*	button, submit, reset */
+.moviewppanel-box input[type=submit], 
+.moviewppanel-box input[type=reset], 
+.moviewppanel-box button {
+	width: auto;
+	max-width: auto;
+	overflow: visible;
+	border: none;
+}
+.moviewppanel-box input::-moz-focus-inner,
+.moviewppanel-box button::-moz-focus-inner {
+	border: 0;
+	padding: 0;
+}
+
+/*	siblings */
+.moviewppanel-box label + .helptext {
+	margin-top: 3px;	
+}
+.moviewppanel-box label + input[type=text], 
+.moviewppanel-box label + input[type=password], 
+.moviewppanel-box label + textarea,
+.moviewppanel-box label + .sbHolder,
+.moviewppanel-box label + .moviewppanel-input-file,
+.moviewppanel-box label + .radio,
+.moviewppanel-box label + .checkbox,
+.moviewppanel-box .helptext + input[type=text], 
+.moviewppanel-box .helptext + input[type=password], 
+.moviewppanel-box .helptext + textarea,
+.moviewppanel-box .helptext + .sbHolder,
+.moviewppanel-box .helptext + .moviewppanel-input-file,
+.moviewppanel-box .helptext + .radio,
+.moviewppanel-box .helptext + .checkbox,
+.moviewppanel-box .preview-file + .moviewppanel-input-file {
+	margin-top: 17px;
+}
+
+/*====================================*\
+	ELEMENTS - BUTTONS
+\*====================================*/
+
+.moviewppanel-button {
+	display: inline-block;
+	font-size: 14px;
+	padding: 5px 20px 7px;
+	cursor: pointer;
+	font-weight: 700;
+	margin: 0;
+	text-decoration: none;
+	cursor: pointer;
+	text-align: center;
+}
+.moviewppanel-box input[type=submit].moviewppanel-button, 
+.moviewppanel-box input[type=reset].moviewppanel-button {
+	padding-top: 4px;
+	padding-bottom: 6px;
+}
+.moviewppanel-button-color-1 {
+	border: 1px solid #e5e5e5 !important;
+	background-color: #434343;
+	color: #fff;
+}
+
+/*	delete */
+.moviewppanel-button-delete {
+	background-color: transparent;
+	display: inline-block;
+	text-indent: -5000px;
+	overflow: hidden;
+	width: 36px !important;
+	height: 36px !important;
+	background-image: url(../images/icon-delete.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	transition: none;
+	-moz-transition: none;
+	-webkit-transition: none;
+	-o-transition: none;
+	-ms-transition: none;
+	cursor: pointer;	
+}
+.moviewppanel-button-delete:hover {
+	background-position: left bottom;	
+}
+
+@media screen and (max-width:782px){
+	.moviewppanel-container {
+		padding: 20px 20px 20px 10px;
+		display: block;	
+	}
+	.moviewppanel-column {
+		display: block;		
+	}
+	.moviewppanel-column.moviewppanel-column-sticky {
+		width: auto;	
+	}
+	.moviewppanel-column + .moviewppanel-column .moviewppanel-box {
+		margin-left: 0;
+		margin-top: 20px;	
+	}
+}
+
+/*====================================*\
+	RTL
+\*====================================*/
+
+/*	container */
+body.rtl .moviewppanel-container {
+	padding: 20px 0 20px 20px;
+}
+
+/*	columns */
+body.rtl .moviewppanel-column + .moviewppanel-column .moviewppanel-box {
+	margin-left: 0;
+	margin-right: 20px;	
+}
+
+/*	box */
+body.rtl .moviewppanel-box.moviewppanel-error {
+	border-left: none;
+	border-right: 5px solid #000000;	
+}
+body.rtl .moviewppanel-box.moviewppanel-updated {
+	border-left: none;
+	border-right: 5px solid #298eea;	
+}
+
+/*	navigation */
+body.rtl .moviewppanel-navigation ul li a {
+	padding: 19px 85px 23px 15px;	
+}
+body.rtl .moviewppanel-navigation ul li a.moviewppanel-icon-nav-1:before {
+	left: auto;
+	right: 0;
+	border-left: 1px solid #e5e5e5;
+	border-right: 5px solid #298eea;	
+}
+body.rtl .moviewppanel-navigation ul li a.moviewppanel-icon-nav-2:before {
+	left: auto;
+	right: 0;
+	border-left: 1px solid #e5e5e5;
+	border-right: 5px solid #000000;	
+}
+body.rtl .moviewppanel-navigation ul li a.moviewppanel-icon-nav-3:before {
+	left: auto;
+	right: 0;
+	border-left: 1px solid #e5e5e5;
+	border-right: 5px solid #298eea;	
+}
+body.rtl .moviewppanel-navigation ul li a.moviewppanel-icon-nav-4:before {
+	left: auto;
+	right: 0;
+	border-left: 1px solid #e5e5e5;
+	border-right: 5px solid #000000;	
+}
+body.rtl .moviewppanel-navigation ul li a.moviewppanel-icon-nav-5:before {
+	left: auto;
+	right: 0;
+	border-left: 1px solid #e5e5e5;
+	border-right: 5px solid #000000;	
+}
+body.rtl .moviewppanel-navigation ul li a.moviewppanel-icon-nav-6:before {
+	left: auto;
+	right: 0;
+	border-left: 1px solid #e5e5e5;
+	border-right: 5px solid #5a308d;	
+}
+body.rtl .moviewppanel-navigation ul li a.moviewppanel-icon-nav-7:before {
+	left: auto;
+	right: 0;
+	border-left: 1px solid #e5e5e5;
+	border-right: 5px solid #298eea;	
+}
+body.rtl .moviewppanel-box .preview-file .moviewppanel-button-delete {
+	margin-left: 0;
+	margin-right: 20px;	
+}
+
+/*	checkbox, radio */
+body.rtl .moviewppanel-box .checkbox + .checkbox,
+body.rtl .moviewppanel-box .checkbox + .radio, 
+body.rtl .moviewppanel-box .radio + .radio,
+body.rtl .moviewppanel-box .radio + .checkbox {
+	margin-left: 0;
+	margin-right: 17px;
+}
+body.rtl .moviewppanel-box .checkbox .mark, 
+body.rtl .moviewppanel-box .radio .mark {
+	padding-left: 0;
+	padding-right: 27px;
+}
+body.rtl .moviewppanel-box .checkbox .mark:before {
+	left: auto;
+	right: 0;
+}
+body.rtl .moviewppanel-box .checkbox input[type=checkbox]:checked + .mark {
+	background-image: url(../images/checkbox-rtl.png);
+	background-position: right 5px;	
+}
+body.rtl .moviewppanel-box .radio .mark:before {
+	left: auto;
+	right: 0;
+}
+body.rtl .moviewppanel-box .radio input[type=radio]:checked + .mark {
+	background-image: url(../images/radio-rtl.png);
+	background-position: right 6px;	
+}
+
+/*	file */
+body.rtl .moviewppanel-input-file .moviewppanel-button {
+	right: auto;
+	left: 0;	
+}
+body.rtl .moviewppanel-input-file input[type=file] {
+	right: auto;
+	left: 0;	
+}
+
+/*	select */
+body.rtl .moviewppanel-box .sbSelector {
+	left: 31px;
+	right: 0;
+}
+body.rtl .moviewppanel-box .sbToggle {
+	left: 0;
+	right: auto;
+	border-left: none;
+	border-right: 1px solid #e5e5e5;
+}
+body.rtl .moviewppanel-box .sbOptions {
+	left: auto;
+	right: 0;
+}
+
+@media screen and (max-width:782px){
+	body.rtl .moviewppanel-container {
+		padding: 20px 10px 20px 20px;	
+	}
+	body.rtl .moviewppanel-column + .moviewppanel-column .moviewppanel-box {
+		margin-right: 0;	
+	}
+}
