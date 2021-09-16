@@ -400,6 +400,7 @@ endif;
 
 //function SEO title pagination
 
+/*  
 function wpse24661_filter_wp_title( $title, $separator ) {
 
     global $paged;
@@ -409,6 +410,7 @@ function wpse24661_filter_wp_title( $title, $separator ) {
     return $title;
 }
 add_filter( 'wp_title', 'wpse24661_filter_wp_title', 101, 2 );
+*/
 
 //function yoast change type
 

@@ -50,7 +50,7 @@ ScrollToTop();
 			<?php if ($moviewp_favorites == 1) { ?>
 				<li<?php if (is_page('favorites')) echo ' class="active"'; ?>><a href="<?php echo esc_url( home_url() ); ?>/favorites/"><i class="fa fa-heart-o"></i><span><?php echo textfavorites; ?></span></a></li>
 			<?php } ?>
-			<?php //dynamic_sidebar( 'left_1' ); ?>
+			<?php dynamic_sidebar( 'left_1' ); ?>
 		</ul>
 	</nav>
 </div>

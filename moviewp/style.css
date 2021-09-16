@@ -2,7 +2,7 @@
 Theme Name: moviewp
 Theme URI: https://github.com/VincenzoPiromalli/moviewp
 Author: VincenzoPiromalli
-Author URI: https://github.com/VincenzoPiromalli/
+Author URI: https://github.com/VincenzoPiromalli
 Support:  https://github.com/VincenzoPiromalli
 Description: Write reviews, add video streaming, or create a Movie and TV Show database with MovieWP theme.
 Tags: theme-options, left-sidebar, full-width-template, grid-layout, entertainment
@@ -10,9 +10,8 @@ Version: 3.8.4
 Requires at least: 5.3
 Tested up to: 5.8.1
 Requires PHP: 7.0
-License: No License
-License URI: https://raw.githubusercontent.com/VincenzoPiromalli/moviewp/main/README.md
-Copyright:  Vincenzo Piromalli
+License:        GNU General Public License v2 or later
+License URI:    https://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 Text Domain: moviewp
 */
 

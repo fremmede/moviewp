@@ -62,16 +62,16 @@ $film = strrev ( $string );
 				<<?php echo $film; ?> id="sampleVideo" src="" allowfullscreen="true" autoplay="0" autoplay="false" webkitallowfullscreen="true" mozallowfullscreen="true" frameborder="0"></<?php echo $film; ?>>
 			</div>
 			<div class="server3 servers" style="display:none">
-				<<?php echo $film; ?> src="https://gomo.to/movie/<?php echo $id; ?>" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" frameborder="0"></<?php echo $film; ?>>
+				<<?php echo $film; ?> src="https://v2.vidsrc.me/embed/<?php echo $id; ?>" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" frameborder="0"></<?php echo $film; ?>>
 			</div>
 			<div class="server4 servers" style="display:none">
-				<<?php echo $film; ?> src="https://dbgo.fun/video.php?id=<?php echo $id; ?>" style="top:-12%;height:120%!important" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" frameborder="0"></<?php echo $film; ?>>
+				<<?php echo $film; ?> src="https://dbgo.fun/video.php?id=<?php echo $id; ?>" style="top:-6%;height:120%!important" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" frameborder="0"></<?php echo $film; ?>>
 			</div>
 			<div class="server5 servers" style="display:none">
 				<<?php echo $film; ?> src="https://apimdb.net/e/movie/<?php echo $id; ?>" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" frameborder="0"></<?php echo $film; ?>>
 			</div>
 			<div class="server6 servers" style="display:none">
-				<<?php echo $film; ?> src="https://embedforfree.co/imdb?id=<?php echo $id; ?>" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" frameborder="0"></<?php echo $film; ?>>
+				<<?php echo $film; ?> src="https://movies.nontongo.win/imdb?id=<?php echo $id; ?>" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" frameborder="0"></<?php echo $film; ?>>
 			</div>
 		</div>
 		<script> 

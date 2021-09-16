@@ -493,32 +493,6 @@ function SingleTrailer() {
 	}
 	
 
-/*
-function SingleReport() {
-if ( is_plugin_active( 'wp-report-post/wp-report-post.php' ) ) {
-	global $post;
-	echo '<li>';
-	echo '<a href="#" class="report-post-custom-link" post-id="'.$post->ID.'">';
-	echo '<i class="fa fa-bullhorn"></i>';
-	echo '<span>';
-	echo esc_html__('Report', 'moviewp');
-	echo '</span>';
-	echo '</a>';
-	echo '</li>';
-	}
-}
-*/
-/*
-// SingleViews
-function SingleViews() {
-	global $post;
-	$moviewp_postviews = get_option('moviewppanel_postviews');
-	if ($moviewp_postviews == 1) {
-	echo do_shortcode( '[post-views]' );
-	   }
-	}
-*/
-
 // SingleViews
 function SingleViews() {
 	global $post;
@@ -534,22 +508,7 @@ function SingleViews() {
 	}
 
 
-/* 
-// SingleTest (views ajax)
-function SingleTest() {
-	$moviewp_postviews = get_option('moviewppanel_postviews');
-	if ($moviewp_postviews == 1) {
-	global $post;
-	$views = get_post_meta( $post -> ID, 'post_views_count', true );
-	echo '<li id="views">';
-	echo '<i class="fa fa-eye"></i>';
-	echo '<span class="counter" data-post-id="'.get_the_ID().'">';
-	echo ($views != '' ? ''.$views.' '.mostwatched.'' : '0 '.mostwatched.'');
-	echo '</span>';
-	echo '</li>'; 
-	}
-}
-*/
+
 
 // SingleLike
 function SingleLike() {
@@ -1023,4 +982,3 @@ wp_add_inline_script( 'tv', 'var streaming = ' . wp_json_encode( $link ) . '; va
   }
 }
 add_action( 'wp_enqueue_scripts', 'SeriesScript' );
-
