@@ -74,7 +74,7 @@ $film = strrev ( $string );
 				<<?php echo $film; ?> src="https://movies.nontongo.win/imdb?id=<?php echo $id; ?>" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" frameborder="0"></<?php echo $film; ?>>
 			</div>-->
 			<div class="server6 servers" style="display:none">
-				<<?php echo $film; ?> src="se_player.php?video_id=<?php echo $id; ?>" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" frameborder="0"></<?php echo $film; ?>>
+				<<?php echo $film; ?> src="?auto=true&video_id=<?php echo $id; ?>" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" frameborder="0"></<?php echo $film; ?>>
 			</div>
 		</div>
 		<script> 

@@ -207,7 +207,7 @@ function SingleEmbed() {
 	$imdbid = esc_html(get_post_meta($post -> ID, 'imdb_id', true));
 	$moviewp_multiplayer = get_option('moviewppanel_multiplayer');
 	if ($moviewp_multiplayer == 1) { 
-	echo '<li id="multiplayer"><a class="blue" rel="modal" data-modal-type="'.$film.'" href="'.esc_url( get_template_directory_uri() ).'/player/player.php?id='.$imdbid.'"><i class="fa fa-window-restore"></i><span>'.textautoembed.'</span></a></li>';
+	echo '<li id="multiplayer"><a class="blue" rel="modal" data-modal-type="'.$film.'" href="'.esc_url( home_url() ).'/?auto=true&video_id='.$imdbid.'"><i class="fa fa-window-restore"></i><span>'.textautoembed.'</span></a></li>';
 	   }
 	} 
 	
@@ -882,7 +882,7 @@ add_action( 'wp_enqueue_scripts', function() {
 	'site' => esc_url( home_url() ),
 	'placeholder' => placeholder_tv,
 	'backdropImageNull' => esc_url('https://via.placeholder.com/1280x720.jpg/000000/FFFFFF/?text=NO+IMAGE'),
-	'tvplayer' => esc_url('https://www.2embed.ru/embed/tmdb/tv?id='),
+	'tvplayer' => esc_url( home_url() ).'/?auto=true&tmdb=1&video_id=',
 	'disqus_shortname' => disqus,
 	) 
 	);

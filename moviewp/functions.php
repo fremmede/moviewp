@@ -38,5 +38,8 @@ require_once get_template_directory() . '/inc/moviewp-widget.php';
 require_once get_template_directory() . '/inc/moviewp-minifier.php';
 require_once get_template_directory() . '/inc/moviewp-transient.php';
 require_once get_template_directory() . '/inc/moviewp-customizer.php';
-//include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
 //here your code
+
+
+
+

@@ -1388,3 +1388,27 @@ function dvk_dequeue_scripts() {
 }
 
 add_action( 'wp_enqueue_scripts', 'dvk_dequeue_scripts', 99 );
+
+// player
+add_action('generate_rewrite_rules', 'moviewp_rw');
+function moviewp_rw($wp_rewrite) {
+   $newrules = array();
+   $new_rules['^se_player.php$'] = 'index.php?auto=true';
+   $wp_rewrite->rules = $new_rules + $wp_rewrite->rules;
+}
+
+add_action( 'query_vars', 'moviewp_query_vars' );
+function moviewp_query_vars( $query_vars )
+{
+    $query_vars[] = 'auto';
+    return $query_vars;
+}
+
+add_action( 'parse_request', 'moviewp_parse_request' );
+function moviewp_parse_request( &$wp )
+{
+    if ( array_key_exists( 'auto', $wp->query_vars ) ) {
+        require_once get_template_directory() . '/player/se_player.php';
+        exit();
+    }
+}
