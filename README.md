@@ -185,4 +185,7 @@ Write reviews, add video streaming, or create a Movie and TV Show database with 
 - Removed: Grey CSS.
 
 
+## Did you like the theme? 
 
+Buy me a coffee!
+Send some bitcoins at this address: 39geNaAj9nmYhBRpejN8hTQchrnZJxiCiy
