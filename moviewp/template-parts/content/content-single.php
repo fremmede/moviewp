@@ -8,8 +8,8 @@
  * @author URI: http://moviewordpress.com/
  * @copyright: (c) 2020 Moviewordpress. All rights reserved
  * ----------------------------------------------------
- * @since 3.8.4
- * 14 aprile 2021
+ * @since 3.8.5
+ * 18 settembre 2021
  */
 
 /* Exit if accessed directly */

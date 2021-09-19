@@ -1,12 +1,12 @@
 <?php
 /**
  *
- * @author: fr0zen
- * @author URI: https://sellix.io/fr0zen
+ * @author: VincenzoPiromalli
+ * @author URI: https://github.com/VincenzoPiromalli
  * @copyright: (c) 2021 Vincenzo Piromalli. All rights reserved
  * ----------------------------------------------------
- * @since 3.8.4
- * 14 aprile 2021
+ * @since 3.8.5
+ * 18 settembre 2021
  */
 
 /* Exit if accessed directly */
@@ -488,7 +488,7 @@ function moviewp_clear($text) {
 
 function live_search() {
 if( !is_single() ){
-	wp_enqueue_script('live_search', get_template_directory_uri() .'/assets/js/live.search.js', array('jquery'), '3.8.4', true);
+	wp_enqueue_script('live_search', get_template_directory_uri() .'/assets/js/live.search.js', array('jquery'), '3.8.5', true);
 	wp_localize_script( 
 		'live_search', 
 		'moviewpSearch', 
@@ -1128,7 +1128,7 @@ add_filter( 'cpt_post_types', 'my_cpt_post_types' );
 //Modify admin footer text
 
 function modify_footer() { ?>
-<?php echo __('Created by ', 'moviewp'); ?><a href="<?php echo esc_url( __( 'https://sellix.io/fr0zen/contact', 'moviewp' ) ); ?>" target="_blank" rel="nofollow"><?php printf( __( 'fr0zen %s', 'moviewp' ),''); ?></a>
+<?php echo __('Created by ', 'moviewp'); ?><a href="<?php echo esc_url( __( 'https://github.com/VincenzoPiromalli/contact', 'moviewp' ) ); ?>" target="_blank" rel="nofollow"><?php printf( __( 'fr0zen %s', 'moviewp' ),''); ?></a>
 <?php }
 add_filter( 'admin_footer_text', 'modify_footer' );
 
@@ -1389,11 +1389,11 @@ function dvk_dequeue_scripts() {
 
 add_action( 'wp_enqueue_scripts', 'dvk_dequeue_scripts', 99 );
 
-// player
+// autoembed movies
 add_action('generate_rewrite_rules', 'moviewp_rw');
 function moviewp_rw($wp_rewrite) {
    $newrules = array();
-   $new_rules['^se_player.php$'] = 'index.php?auto=true';
+   $new_rules['^player-movie.php$'] = 'index.php?auto=true';
    $wp_rewrite->rules = $new_rules + $wp_rewrite->rules;
 }
 
@@ -1408,7 +1408,33 @@ add_action( 'parse_request', 'moviewp_parse_request' );
 function moviewp_parse_request( &$wp )
 {
     if ( array_key_exists( 'auto', $wp->query_vars ) ) {
-        require_once get_template_directory() . '/player/se_player.php';
+        require_once get_template_directory() . '/player/player-movie.php';
+        exit();
+    }
+}
+
+
+
+// autoembed series
+add_action('generate_rewrite_rules', 'moviewp_tv_rw');
+function moviewp_tv_rw($wp_rewrite) {
+   $newrules = array();
+   $new_rules['^player-tv.php$'] = 'index.php?tv=true';
+   $wp_rewrite->rules = $new_rules + $wp_rewrite->rules;
+}
+
+add_action( 'query_vars', 'moviewp_tv_query_vars' );
+function moviewp_tv_query_vars( $query_vars )
+{
+    $query_vars[] = 'tv';
+    return $query_vars;
+}
+
+add_action( 'parse_request', 'moviewp_tv_parse_request' );
+function moviewp_tv_parse_request( &$wp )
+{
+    if ( array_key_exists( 'tv', $wp->query_vars ) ) {
+        require_once get_template_directory() . '/player/player-tv.php';
         exit();
     }
 }

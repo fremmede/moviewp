@@ -7,14 +7,14 @@
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
  * ----------------------------------------------------
- * @author: fr0zen
- * @author URI: https://sellix.io/fr0zen
+ * @author: VincenzoPiromalli
+ * @author URI: https://github.com/VincenzoPiromalli
  * @copyright: (c) 2021 Vincenzo Piromalli. All rights reserved
  * ----------------------------------------------------
  * 
  * 
- * @since 3.8.4
- * 14 aprile 2021
+ * @since 3.8.5
+ * 18 settembre 2021
  */
 	
 /* Exit if accessed directly */

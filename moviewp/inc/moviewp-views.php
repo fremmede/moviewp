@@ -1,12 +1,12 @@
 <?php
 /*
 * ----------------------------------------------------
-* @author: fr0zen
-* @author URI: https://sellix.io/fr0zen
+* @author: VincenzoPiromalli
+* @author URI: https://github.com/VincenzoPiromalli
 * @copyright: (c) 2021 Vincenzo Piromalli. All rights reserved
 * ----------------------------------------------------
-* @since 3.8.4
-* 14 aprile 2021
+* @since 3.8.5
+* 18 settembre 2021
 */
 
 /* Exit if accessed directly */
@@ -53,7 +53,7 @@ function postview_cache_count_enqueue() {
 	global $post;
 	if ( is_single() ) {
 		// Enqueue and localize script here
-		wp_register_script( 'postviews-cache', get_template_directory_uri() . '/assets/js/postviews-cache.js', array( 'jquery' ), '3.8.4', true );
+		wp_register_script( 'postviews-cache', get_template_directory_uri() . '/assets/js/postviews-cache.js', array( 'jquery' ), '3.8.5', true );
 		wp_localize_script( 'postviews-cache', 'viewsCacheL10n', array(
 		'ajaxurl' => admin_url('admin-ajax.php', (is_ssl() ? 'https' : 'http')), 
 		'post_id' => intval($post->ID),

@@ -4,9 +4,9 @@ Author: VincenzoPiromalli
 Requires at least: 5.3
 Tested up to: 5.8.1
 Requires PHP: 7.0
-Stable tag: 3.8.4
-License: No License
-License URI: https://raw.githubusercontent.com/VincenzoPiromalli/moviewp/main/README.md
+Stable tag: 3.8.5
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 
 == Description ==
 

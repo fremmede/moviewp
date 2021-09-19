@@ -5,10 +5,10 @@
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  * 
  * @package moviewp
- * @since moviewp 3.8.4
+ * @since moviewp 3.8.5
  *
- * @author: fr0zen
- * @author URI: https://sellix.io/fr0zen
+ * @author: VincenzoPiromalli
+ * @author URI: https://github.com/VincenzoPiromalli
  * @copyright: (c) 2021 Vincenzo Piromalli. All rights reserved
  * ----------------------------------------------------
  * 

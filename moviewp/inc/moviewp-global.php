@@ -1,12 +1,12 @@
 <?php
 /*
 * ----------------------------------------------------
-* @author: fr0zen
-* @author URI: https://sellix.io/fr0zen
+* @author: VincenzoPiromalli
+* @author URI: https://github.com/VincenzoPiromalli
 * @copyright: (c) 2021 Vincenzo Piromalli. All rights reserved
 * ----------------------------------------------------
-* @since 3.8.4
-* 14 aprile 2021
+* @since 3.8.5
+* 18 settembre 2021
 */
 
 /* Exit if accessed directly */
@@ -191,7 +191,7 @@ function portada() {
 	} 
 	} 
 	
-	
+
 
 // No Image Person Thumbnail
 function noImg() {
@@ -207,7 +207,7 @@ function SingleEmbed() {
 	$imdbid = esc_html(get_post_meta($post -> ID, 'imdb_id', true));
 	$moviewp_multiplayer = get_option('moviewppanel_multiplayer');
 	if ($moviewp_multiplayer == 1) { 
-	echo '<li id="multiplayer"><a class="blue" rel="modal" data-modal-type="'.$film.'" href="'.esc_url( home_url() ).'/?auto=true&video_id='.$imdbid.'"><i class="fa fa-window-restore"></i><span>'.textautoembed.'</span></a></li>';
+	echo '<li id="multiplayer"><a class="blue" rel="modal" data-modal-type="'.$film.'" href="'.esc_url( home_url() ).'/?player_movie='.get_the_ID().'&auto=true"><i class="fa fa-window-restore"></i><span>'.textautoembed.'</span></a></li>';
 	   }
 	} 
 	
@@ -864,7 +864,7 @@ add_action( 'wp_enqueue_scripts', function() {
 	$script = 'embed';
 	}
 	
-	wp_enqueue_script( $script, get_template_directory_uri() . '/assets/js/'.$script.'.js', array( 'jquery' ), '3.8.4', true );
+	wp_enqueue_script( $script, get_template_directory_uri() . '/assets/js/'.$script.'.js', array( 'jquery' ), '3.8.5', true );
 	wp_localize_script( $script, 'MoviewpAPI', array( 
 	'tvapikey' => apikey,
 	'tvid' => $tmdbid, 
@@ -882,7 +882,7 @@ add_action( 'wp_enqueue_scripts', function() {
 	'site' => esc_url( home_url() ),
 	'placeholder' => placeholder_tv,
 	'backdropImageNull' => esc_url('https://via.placeholder.com/1280x720.jpg/000000/FFFFFF/?text=NO+IMAGE'),
-	'tvplayer' => esc_url( home_url() ).'/?auto=true&tmdb=1&video_id=',
+	'tvplayer' => esc_url(home_url()).'/?player_tv=',
 	'disqus_shortname' => disqus,
 	) 
 	);
@@ -900,7 +900,7 @@ add_action( 'wp_enqueue_scripts', function() {
 	$imdbid = esc_html(get_post_meta($post -> ID, 'imdb_id', true));
 	$sd = esc_html(get_post_meta($post -> ID, '720p', true));
 	$hd = esc_html(get_post_meta($post -> ID, '1080p', true));
-	wp_enqueue_script( 'movie', get_template_directory_uri() . '/assets/js/movie.js', array( 'jquery' ), '3.8.4', true );
+	wp_enqueue_script( 'movie', get_template_directory_uri() . '/assets/js/movie.js', array( 'jquery' ), '3.8.5', true );
 	wp_localize_script( 'movie', 'MoviewpAPI', array( 
 	'tmdbapi' => apikey,
 	'movie' => $tmdbid, 
@@ -926,7 +926,7 @@ add_action( 'wp_enqueue_scripts', function() {
 function modal_enqueue_script() {
 
 	if(!is_single()) return;
-	wp_enqueue_script( 'modal', get_template_directory_uri() . '/assets/js/modal.js', array( 'jquery' ), '3.8.4', true );
+	wp_enqueue_script( 'modal', get_template_directory_uri() . '/assets/js/modal.js', array( 'jquery' ), '3.8.5', true );
 
 }
 add_action( 'wp_enqueue_scripts', 'modal_enqueue_script' );

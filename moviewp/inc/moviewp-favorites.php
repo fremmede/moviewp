@@ -1,12 +1,12 @@
 <?php
 /*
 * ----------------------------------------------------
-* @author: fr0zen
-* @author URI: https://sellix.io/fr0zen
+* @author: VincenzoPiromalli
+* @author URI: https://github.com/VincenzoPiromalli
 * @copyright: (c) 2021 Vincenzo Piromalli. All rights reserved
 * ----------------------------------------------------
-* @since 3.8.4
-* 14 aprile 2021
+* @since 3.8.5
+* 18 settembre 2021
 */
 
 /*====================================*\
@@ -18,7 +18,7 @@ if ($moviewp_favorites == 1) {
 function enqueue_favorite(){
 if ( is_singular() ) {
     if( !is_page('favorites') ){ // prevent this script from loading if user is on favorite movies page 
-	  wp_enqueue_script( 'moviewp-favorite', get_template_directory_uri() . '/assets/js/moviewp-favorite.js', array(), '3.8.4', true);
+	  wp_enqueue_script( 'moviewp-favorite', get_template_directory_uri() . '/assets/js/moviewp-favorite.js', array(), '3.8.5', true);
     }
 } 
 } 
@@ -29,7 +29,7 @@ add_action('wp_enqueue_scripts' ,'enqueue_favorite');
 function my_ajax_scripts(){
 
     if( is_page('favorites') ){ //script is only loaded on favorites page
-		wp_enqueue_script( 'moviewp-ajax-favorite', get_template_directory_uri() . '/assets/js/moviewp-ajax-favorite.js', array(), '3.8.4', true);
+		wp_enqueue_script( 'moviewp-ajax-favorite', get_template_directory_uri() . '/assets/js/moviewp-ajax-favorite.js', array(), '3.8.5', true);
         wp_localize_script('moviewp-ajax-favorite', 'moviewpFavorites', array('ajax_url' => admin_url('admin-ajax.php') ) );
     }
 }
