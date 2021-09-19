@@ -4,7 +4,7 @@
 - Requires at least: 5.3
 - Tested up to:  5.8.1
 - Requires PHP: 7.0
-- Stable tag: 3.8.4
+- Stable tag: 3.8.5
 
 
 ##  Description 
@@ -183,6 +183,11 @@ Write reviews, add video streaming, or create a Movie and TV Show database with 
 - Updated: The grid / list function has also been added for the scroll module.
 - Updated: All CSS styles.
 - Removed: Grey CSS.
+
+= 3.8.5 =
+
+- added some things
+
 
 
 ## Did you like the theme? 
