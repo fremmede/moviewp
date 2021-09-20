@@ -1,6 +1,6 @@
 ##  MovieWP 
 
-- Author: VincenzoPiromalli (fr0zen)
+- Author: VincenzoPiromalli
 - Requires at least: 5.3
 - Tested up to:  5.8.1
 - Requires PHP: 7.0
