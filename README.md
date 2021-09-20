@@ -25,6 +25,12 @@ Write reviews, add video streaming, or create a Movie and TV Show database with 
 
 [Live Demo](https://moviewp.com/)
 
+##  Support
+
+For any support requests, modifications or other please contact me at this address:
+
+vpiromalli74@gmail.com
+
 ##  Changelog 
 
 = 3.0 =
