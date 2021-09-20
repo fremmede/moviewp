@@ -189,7 +189,12 @@ Write reviews, add video streaming, or create a Movie and TV Show database with 
 
 = 3.8.5 =
 
-- added some things
+- Fixed: pages
+- Fixed: JS
+- Updated: CSS
+- Updated: Autoembed
+- Updated: Importer Plugin
+- Removed: License (now is free)
 
 
 
