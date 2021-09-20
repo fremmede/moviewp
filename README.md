@@ -19,6 +19,9 @@ Write reviews, add video streaming, or create a Movie and TV Show database with 
 4. Configure your setting in MovieWP admin panel.
 5. Do not delete, remove or rename category Movies and TV Series from wordpress category editor or the theme will no longer work properly!!
 
+##  Demo
+
+[Live Demo](https://moviewp.com/)
 
 ##  Changelog 
 
