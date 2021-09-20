@@ -190,5 +190,11 @@ Removed by the author.
 - Updated: All CSS styles.
 - Removed: Grey CSS.
 
+= 3.8.5 =
+
+- Fixed: pages
+- Fixed: JS
+- Updated: CSS
+- Updated: Autoembed
 
 
