@@ -19,7 +19,7 @@ Write reviews, add video streaming, or create a Movie and TV Show database with 
 2. Upload theme and activate it.
 3. Install and activate ALL plugins required when activating the theme.
 4. Configure your setting in MovieWP admin panel.
-5. Do not delete, remove or rename category Movies and TV Series from wordpress category editor or the theme will no longer work properly!!
+5. Do not delete or rename category Movies and TV Series from wordpress category editor or the theme will no longer work properly! You can name these categories from the MovieWP administration panel under "translate".
 
 ##  Demo
 
@@ -27,7 +27,7 @@ Write reviews, add video streaming, or create a Movie and TV Show database with 
 
 ##  Support
 
-For any support requests, modifications or other please contact me at this address:
+For any support requests, modifications, custom work or other please contact me at this address:
 
 vpiromalli74@gmail.com
 
