@@ -203,7 +203,7 @@ define	('disqus', 'moviewordpress');
 if (strlen($moviewp_omdb) > 0) { 
 define	('omdb', html_entity_decode(stripslashes_deep($moviewp_omdb), ENT_QUOTES)); 
  } else { 
-define	('omdb', '128fb1d4'); 
+define	('omdb', 'b9bd48a6'); 
 } 
 
 /*====================================*\

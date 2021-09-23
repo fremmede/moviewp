@@ -34,8 +34,7 @@ get_template_part('moviewppanel/header'); ?>
 		<form action="" method="post" enctype="multipart/form-data">
 		<p>
 			<label for="moviewppanel_license"><?php echo __('License', 'moviewp'); ?> &nbsp;<span class="flashit">&#9679;</span></label>
-			<span class="helptext"><?php echo __('The licenses for this product are lifetime, this type of license allows you to obtain free updates and extra activations, access to support is permanent.<br> You cannot share or sell this product and license, if you do, your license will be deactivated.', 'moviewp'); ?></span>
-			<input type="text" placeholder="free by fr0zen" name="moviewppanel_license" id="moviewppanel_license"  value="free by fr0zen" readonly>
+			<span class="helptext"><?php echo __('The licenses for this product is free, for any support requests, modifications, custom work or other please contact me', 'moviewp'); ?> <a href="<?php echo esc_url( __( 'https://github.com/VincenzoPiromalli/', 'moviewp' ) ); ?>" target="_blank" rel="nofollow"><?php printf( __( 'here %s', 'moviewp' ),''); ?></a></span>
 		</p>
 		<p>
 			<label for="moviewppanel_apikey"><?php echo __('API Key', 'moviewp'); ?></label>

@@ -20,7 +20,7 @@ $film = strrev ( $string );
 $server1 = 'https://www.2embed.ru/embed/imdb/movie?id='.$imdb;
 $server2 = 'https://vidclouds.net/'.$imdb.'.html';
 $server3 = 'https://v2.vidsrc.me/embed/'.$imdb.'/';
-$server4 = 'https://apimdb.net/e/movie/'.$imdb;
+$server4 = 'https://v2.apimdb.net/e/movie/'.$imdb;
 $server5 = 'https://embedforfree.co/imdb?id='.$imdb;
 $server6 = 'https://databasegdriveplayer.co/player.php?imdb='.$imdb;
 $server7 = 'https://gomo.to/movie/'.$imdb;
@@ -36,7 +36,6 @@ $server9 = 'https://embed.warezcdn.net/filme/'.$imdb;
 		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
 		<meta name="HandheldFriendly" content="true">
 		<meta name="robots" content="noindex,nofollow">
-        <meta name="referrer" content="no-referrer" />
 		
 		<script src='//cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js?ver=3.5.1'></script>
 		<script src='<?php echo esc_url( get_template_directory_uri() ); ?>/assets/js/player.js?ver=3.8.5'></script>

@@ -57,7 +57,7 @@ $server7 = 'https://v2.vidsrc.me/embed/'.$imdb.'/'.$season.'-'.$episode.'/';
 					</ul>
 				</div>
 				<div id="load-iframe">
-					<<?php echo $film; ?> id='iframe' src='<?php echo $server1; ?>' marginwidth='0' marginheight='0' scrolling='no' frameborder='0' style='width:100%; height:100%' allow='autoplay; encrypted-media' allowfullscreen></<?php echo $film; ?>>
+					<<?php echo $film; ?> id='iframe' src='<?php echo $server1; ?>' marginwidth='0' marginheight='0' scrolling='no' frameborder='0' style='width:100%; height:100%' allowfullscreen></<?php echo $film; ?>>
 				</div>
 			</div>
 			<div id="loader-wrapper">

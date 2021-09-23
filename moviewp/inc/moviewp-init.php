@@ -1128,7 +1128,7 @@ add_filter( 'cpt_post_types', 'my_cpt_post_types' );
 //Modify admin footer text
 
 function modify_footer() { ?>
-<?php echo __('Created by ', 'moviewp'); ?><a href="<?php echo esc_url( __( 'https://github.com/VincenzoPiromalli/contact', 'moviewp' ) ); ?>" target="_blank" rel="nofollow"><?php printf( __( 'fr0zen %s', 'moviewp' ),''); ?></a>
+<?php echo __('Created by ', 'moviewp'); ?><a href="<?php echo esc_url( __( 'https://github.com/VincenzoPiromalli/contact', 'moviewp' ) ); ?>" target="_blank" rel="nofollow"><?php printf( __( 'VincenzoPiromalli %s', 'moviewp' ),''); ?></a>
 <?php }
 add_filter( 'admin_footer_text', 'modify_footer' );
 
