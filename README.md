@@ -1,10 +1,12 @@
+![MovieWP](https://i.imgur.com/84pIARu.png)
+
 ##  MovieWP 
 
-- Author: VincenzoPiromalli (fr0zen)
+- Author: VincenzoPiromalli
 - Requires at least: 5.3
 - Tested up to:  5.8.1
 - Requires PHP: 7.0
-- Stable tag: 3.8.4
+- Stable tag: 3.8.5
 
 
 ##  Description 
@@ -17,8 +19,17 @@ Write reviews, add video streaming, or create a Movie and TV Show database with 
 2. Upload theme and activate it.
 3. Install and activate ALL plugins required when activating the theme.
 4. Configure your setting in MovieWP admin panel.
-5. Do not delete, remove or rename category Movies and TV Series from wordpress category editor or the theme will no longer work properly!!
+5. Do not delete or rename category Movies and TV Series from wordpress category editor or the theme will no longer work properly! You can name these categories from the MovieWP administration panel under "translate".
 
+##  Demo
+
+[Live Demo](https://moviewp.com/)
+
+##  Support
+
+For any support requests, modifications, custom work or other please contact me at this address:
+
+vpiromalli74@gmail.com
 
 ##  Changelog 
 
@@ -183,6 +194,16 @@ Write reviews, add video streaming, or create a Movie and TV Show database with 
 - Updated: The grid / list function has also been added for the scroll module.
 - Updated: All CSS styles.
 - Removed: Grey CSS.
+
+= 3.8.5 =
+
+- Fixed: pages
+- Fixed: JS
+- Updated: CSS
+- Updated: Autoembed
+- Updated: Importer Plugin
+- Removed: License (now is free)
+
 
 
 ## Did you like the theme? 
