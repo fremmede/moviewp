@@ -18,7 +18,7 @@ $film = strrev ( $string );
 
 //servers
 $server1 = 'https://www.2embed.ru/embed/imdb/movie?id='.$imdb;
-$server2 = 'https://vidclouds.net/'.$imdb.'.html';
+$server2 = 'https://vidcloud.stream/'.$imdb.'.html';
 $server3 = 'https://v2.vidsrc.me/embed/'.$imdb.'/';
 $server4 = 'https://v2.apimdb.net/e/movie/'.$imdb;
 $server5 = 'https://embedforfree.co/imdb?id='.$imdb;
