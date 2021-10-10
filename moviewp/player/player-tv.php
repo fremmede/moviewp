@@ -20,7 +20,7 @@ $film = strrev ( $string );
 
 //servers
 $server1 = 'https://www.2embed.ru/embed/tmdb/tv?id='.$tmdb.'&s='.$season.'&e='.$episode.'';
-$server2 = 'https://vidclouds.net/tv.php?imdb='.$imdb.'&season='.$season.'&episode='.$episode.'';
+$server2 = 'https://vidcloud.stream/tv/'.$imdb.'/'.$season.'/'.$episode.'.html';
 $server3 = 'https://dbgo.fun/imdbse.php?id='.$imdb.'&s='.$season.'&e='.$episode.'';
 $server4 = 'https://stream.nontongo.win/tv-series/tmdb?id='.$tmdb.'&s='.$season.'&e='.$episode.'';
 $server5 = 'https://v2.apimdb.net/e/tmdb/tv/'.$tmdb.'/'.$season.'/'.$episode.'/';
