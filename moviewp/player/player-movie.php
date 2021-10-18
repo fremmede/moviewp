@@ -21,7 +21,7 @@ $server1 = 'https://www.2embed.ru/embed/imdb/movie?id='.$imdb;
 $server2 = 'https://vidcloud.stream/se_player.php?video_id='.$imdb;
 $server3 = 'https://v2.vidsrc.me/embed/'.$imdb.'/';
 $server4 = 'https://v2.apimdb.net/e/movie/'.$imdb;
-$server5 = 'https://embedforfree.co/imdb?id='.$imdb;
+$server5 = 'https://dbgo.fun/imdb.php?id='.$imdb;
 $server6 = 'https://databasegdriveplayer.co/player.php?imdb='.$imdb;
 $server7 = 'https://gomo.to/movie/'.$imdb;
 $server8 = 'https://movies.nontongo.win/imdb?id='.$imdb;
@@ -48,10 +48,10 @@ $server9 = 'https://embed.warezcdn.net/filme/'.$imdb;
 					<a href="javascript:void(0)" id="show-server" title="Servers"></a>
 					<ul class="list-server-items">
 						<li onclick="loadServer(s.Server1)" class="active">2embed</li>
-						<li onclick="loadServer(s.Server2)">Superembed</li>
+						<li onclick="loadServer(s.Server2)">superembed</li>
 						<li onclick="loadServer(s.Server3)">vidsrc</li>
 						<li onclick="loadServer(s.Server4)">apimdb</li>
-						<li onclick="loadServer(s.Server5)">embedforfree</li>
+						<li onclick="loadServer(s.Server5)">dbgo.fun</li>
 						<li onclick="loadServer(s.Server6)">gdriveplayer</li>
 						<li onclick="loadServer(s.Server7)">gomo.to</li>
 						<li onclick="loadServer(s.Server8)">nontongo</li>
