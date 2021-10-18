@@ -59,7 +59,7 @@ $server9 = 'https://embed.warezcdn.net/filme/'.$imdb;
 					</ul>
 				</div>
 				<div id="load-iframe">
-					<<?php echo $film; ?> id='iframe' src='<?php echo $server1; ?>' marginwidth='0' marginheight='0' scrolling='no' frameborder='0' style='width:100%; height:100%' allowfullscreen></<?php echo $film; ?>>
+					<<?php echo $film; ?> id='<?php echo $film; ?>' src='<?php echo $server1; ?>' marginwidth='0' marginheight='0' scrolling='no' frameborder='0' style='width:100%; height:100%' allowfullscreen></<?php echo $film; ?>>
 				</div>
 			</div>
 			<div id="loader-wrapper">
