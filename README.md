@@ -4,7 +4,7 @@
 
 - Author: VincenzoPiromalli
 - Requires at least: 5.3
-- Tested up to:  5.8.1
+- Tested up to:  5.8
 - Requires PHP: 7.0
 - Stable tag: 3.8.5
 
