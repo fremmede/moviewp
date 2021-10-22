@@ -27,9 +27,9 @@ Write reviews, add video streaming, or create a Movie and TV Show database with 
 
 ##  Support
 
-For any support requests, modifications, custom work or other please contact me at this address:
+There is no support and no updates for free version, to get free installation, lifetime technical support, and free monthly updates you can buy the product [here](https://fr0zen.shop/product/moviewp/):
 
-vpiromalli74@gmail.com
+[MovieWP - Movie WordPress theme](https://fr0zen.shop/product/moviewp/)
 
 ##  Changelog 
 
