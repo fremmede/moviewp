@@ -18,7 +18,7 @@ $film = strrev ( $string );
 
 //servers
 $server1 = 'https://www.2embed.ru/embed/imdb/movie?id='.$imdb;
-$server2 = 'https://vidcloud.stream/se_player.php?video_id='.$imdb;
+$server2 = 'https://vidcloud.stream/'.$imdb.'.html';
 $server3 = 'https://v2.vidsrc.me/embed/'.$imdb.'/';
 $server4 = 'https://v2.apimdb.net/e/movie/'.$imdb;
 $server5 = 'https://dbgo.fun/imdb.php?id='.$imdb;
@@ -48,7 +48,7 @@ $server9 = 'https://embed.warezcdn.net/filme/'.$imdb;
 					<a href="javascript:void(0)" id="show-server" title="Servers"></a>
 					<ul class="list-server-items">
 						<li onclick="loadServer(s.Server1)" class="active">2embed</li>
-						<li onclick="loadServer(s.Server2)">superembed</li>
+						<li onclick="loadServer(s.Server2)">vidcloud</li>
 						<li onclick="loadServer(s.Server3)">vidsrc</li>
 						<li onclick="loadServer(s.Server4)">apimdb</li>
 						<li onclick="loadServer(s.Server5)">dbgo.fun</li>
