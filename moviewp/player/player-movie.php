@@ -48,7 +48,7 @@ $server9 = 'https://embed.warezcdn.net/filme/'.$imdb;
 					<a href="javascript:void(0)" id="show-server" title="Servers"></a>
 					<ul class="list-server-items">
 						<li onclick="loadServer(s.Server1)" class="active">2embed</li>
-						<li onclick="loadServer(s.Server2)">vidcloud</li>
+						<li onclick="loadServer(s.Server2)">streamio</li>
 						<li onclick="loadServer(s.Server3)">vidsrc</li>
 						<li onclick="loadServer(s.Server4)">apimdb</li>
 						<li onclick="loadServer(s.Server5)">dbgo.fun</li>
