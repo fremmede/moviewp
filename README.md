@@ -203,6 +203,7 @@ There is no support and no updates for free version, to get free installation, l
 - Updated: Autoembed
 - Updated: Importer Plugin
 - Removed: License (now is free)
+- Updated: Added streamio CDN videos API (ad free)
 
 
 
