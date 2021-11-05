@@ -20,24 +20,23 @@ $film = strrev ( $string );
 
 //servers
 $server1 = 'https:\/\/vidcloud.stream\/'.$imdb.'.html'; //stremio
-$server2 = 'https:\/\/2embed.ru\/embed\/imdb\/movie?id='.$imdb;
+$server2 = 'https:\/\/www.2embed.ru\/embed\/imdb\/movie?id='.$imdb;
 $server3 = 'https:\/\/v2.vidsrc.me\/embed\/'.$imdb.'\/';
 $server4 = 'https:\/\/moviewp.com\/se.php?video_id='.$imdb;
 $server5 = 'https:\/\/curtstream.com\/movies\/imdb\/'.$imdb.'\/';
 $server6 = 'https:\/\/databasegdriveplayer.co\/player.php?imdb='.$imdb;
-$server7 = 'https:\/\/gomo.to\/movie\/'.$imdb;
-$server8 = 'https:\/\/apimdb.net\/e\/movie\/'.$imdb;
-$server9 = 'https:\/\/embedforfree.co\/imdb?id='.$imdb;
+$server7 = 'https:\/\/apimdb.net\/e\/movie\/'.$imdb;
+$server8 = 'https:\/\/embedforfree.co\/imdb?id='.$imdb;
+$server9 = 'https:\/\/gomo.to\/movie\/'.$imdb;
 //$server8 = 'https:\/\/movies.nontongo.win\/imdb?id='.$imdb; //indi
 //$server9 = 'https:\/\/embed.warezcdn.net\/filme\/'.$imdb; //pt-BR
 ?>
 <!DOCTYPE html>
-<html>
+<html <?php language_attributes(); ?>>
 	<head>
-		<meta charset="UTF-8">
+		<meta charset="<?php bloginfo('charset'); ?>">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel='dns-prefetch' href='//image.tmdb.org' />
-		<link rel='preconnect' href='//image.tmdb.org' />
+
 		<script src='//cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js?ver=3.5.1'></script>
 		<script src='<?php echo esc_url( get_template_directory_uri() ); ?>/assets/js/player.js?ver=3.8.5'></script>
 		<link href='<?php echo esc_url( get_template_directory_uri() ); ?>/assets/css/player.css?ver=3.8.5' rel='stylesheet' type='text/css' media='all' />
@@ -47,17 +46,17 @@ $server9 = 'https:\/\/embedforfree.co\/imdb?id='.$imdb;
 		<div class="wrapper">
 			<div class="videocontent">
 				<div id="list-server-more">
-					<a href="javascript:void(0)" id="show-server" title="Servers"></a>
+					<a href="javascript:void(0)" id="show-server" title="<?php echo esc_attr__( 'Servers', 'moviewp' ) ?>"></a>
 					<ul class="list-server-items">
-						<li onclick="loadServer(s.Server1)" class="active"><?php _e('stremio', 'moviewp'); ?></li>
-						<li onclick="loadServer(s.Server2)"><?php _e('2embed', 'moviewp'); ?></li>
-						<li onclick="loadServer(s.Server3)"><?php _e('vidsrc', 'moviewp'); ?></li>
-						<li onclick="loadServer(s.Server4)"><?php _e('superembed', 'moviewp'); ?></li>
-						<li onclick="loadServer(s.Server5)"><?php _e('curtstream', 'moviewp'); ?></li>
-						<li onclick="loadServer(s.Server6)"><?php _e('gdriveplayer', 'moviewp'); ?></li>
-						<li onclick="loadServer(s.Server7)"><?php _e('gomoto', 'moviewp'); ?></li>
-						<li onclick="loadServer(s.Server8)"><?php _e('apimdb', 'moviewp'); ?></li>
-						<li onclick="loadServer(s.Server9)"><?php _e('embedforfree', 'moviewp'); ?></li>
+						<li onclick="loadServer(s.Server1)" class="active"><?php echo esc_html__('stremio', 'moviewp'); ?></li>
+						<li onclick="loadServer(s.Server2)"><?php echo esc_html__('2embed', 'moviewp'); ?></li>
+						<li onclick="loadServer(s.Server3)"><?php echo esc_html__('vidsrc', 'moviewp'); ?></li>
+						<li onclick="loadServer(s.Server4)"><?php echo esc_html__('superembed', 'moviewp'); ?></li>
+						<li onclick="loadServer(s.Server5)"><?php echo esc_html__('curtstream', 'moviewp'); ?></li>
+						<li onclick="loadServer(s.Server6)"><?php echo esc_html__('gdriveplayer', 'moviewp'); ?></li>
+						<li onclick="loadServer(s.Server7)"><?php echo esc_html__('apimdb', 'moviewp'); ?></li>
+						<li onclick="loadServer(s.Server8)"><?php echo esc_html__('embedforfree', 'moviewp'); ?></li>
+						<li onclick="loadServer(s.Server9)"><?php echo esc_html__('gomoto', 'moviewp'); ?></li>
 					</ul>
 				</div>
 				<div id="load-iframe">
