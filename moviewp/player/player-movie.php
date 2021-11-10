@@ -6,7 +6,7 @@
 * @copyright: (c) 2021 Vincenzo Piromalli. All rights reserved
 * ----------------------------------------------------
 * @since 3.8.5
-* 5 novembre 2021
+* 9 november 2021
 */
 
 if (isset($_GET['player_movie'])) {
@@ -19,8 +19,8 @@ $string = 'emarfi';
 $film = strrev ( $string );
 
 //servers
-$server1 = 'https:\/\/vidcloud.stream\/'.$imdb.'.html'; //stremio
-$server2 = 'https:\/\/www.2embed.ru\/embed\/imdb\/movie?id='.$imdb;
+$server1 = 'https:\/\/www.2embed.ru\/embed\/imdb\/movie?id='.$imdb;
+$server2 = 'https:\/\/vidcloud.stream\/'.$imdb.'.html'; //stremio
 $server3 = 'https:\/\/v2.vidsrc.me\/embed\/'.$imdb.'\/';
 $server4 = 'https:\/\/moviewp.com\/se.php?video_id='.$imdb;
 $server5 = 'https:\/\/curtstream.com\/movies\/imdb\/'.$imdb.'\/';
@@ -35,6 +35,7 @@ $server9 = 'https:\/\/gomo.to\/movie\/'.$imdb;
 <html <?php language_attributes(); ?>>
 	<head>
 		<meta charset="<?php bloginfo('charset'); ?>">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 		<script src='//cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js?ver=3.5.1'></script>
@@ -48,8 +49,8 @@ $server9 = 'https:\/\/gomo.to\/movie\/'.$imdb;
 				<div id="list-server-more">
 					<a href="javascript:void(0)" id="show-server" title="<?php echo esc_attr__( 'Servers', 'moviewp' ) ?>"></a>
 					<ul class="list-server-items">
-						<li onclick="loadServer(s.Server1)" class="active"><?php echo esc_html__('stremio', 'moviewp'); ?></li>
-						<li onclick="loadServer(s.Server2)"><?php echo esc_html__('2embed', 'moviewp'); ?></li>
+						<li onclick="loadServer(s.Server1)" class="active"><?php echo esc_html__('2embed', 'moviewp'); ?></li>
+						<li onclick="loadServer(s.Server2)"><?php echo esc_html__('stremio', 'moviewp'); ?></li>
 						<li onclick="loadServer(s.Server3)"><?php echo esc_html__('vidsrc', 'moviewp'); ?></li>
 						<li onclick="loadServer(s.Server4)"><?php echo esc_html__('superembed', 'moviewp'); ?></li>
 						<li onclick="loadServer(s.Server5)"><?php echo esc_html__('curtstream', 'moviewp'); ?></li>
