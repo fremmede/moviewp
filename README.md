@@ -204,8 +204,8 @@ There is no support and no updates for free version, to get free installation, l
 - Updated: Importer Plugin
 - Removed: License (now is free)
 - Updated: Added streamio CDN videos API (ad free)
-- Updated: Added multiple captions to streamio autoembed
-
+- Updated: Added multiple captions to streamio movies autoembed
+- Updated: Added multiple captions to streamio series autoembed
 
 
 ## Did you like the theme? 
