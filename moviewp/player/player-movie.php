@@ -10,21 +10,15 @@
 */
 
 if (isset($_GET['player_movie'])) {
-
 $post_id = $_GET['player_movie'];
 $imdb = get_post_meta($post_id, 'imdb_id', true);
 $backdrop_path = esc_html(get_post_meta($post_id, 'backdrop_path', true));
 $cover3 = 'https://image.tmdb.org/t/p/w1280' . $backdrop_path;
 $string = 'emarfi';
 $film = strrev ( $string );
-
-//servers
 $server1 = 'https:\/\/www.2embed.ru\/embed\/imdb\/movie?id='.$imdb;
-<<<<<<< HEAD
 $server2 = 'https:\/\/vidcloud.stream\/'.$imdb.'.html'; 
-=======
-$server2 = 'https:\/\/vidcloud.stream\/'.$imdb.'.html'; //stremio
->>>>>>> main
+$server2 = 'https:\/\/vidcloud.stream\/'.$imdb.'.html'; 
 $server3 = 'https:\/\/v2.vidsrc.me\/embed\/'.$imdb.'\/';
 $server4 = 'https:\/\/moviewp.com\/se.php?video_id='.$imdb;
 $server5 = 'https:\/\/curtstream.com\/movies\/imdb\/'.$imdb.'\/';
@@ -32,12 +26,6 @@ $server6 = 'https:\/\/databasegdriveplayer.co\/player.php?imdb='.$imdb;
 $server7 = 'https:\/\/apimdb.net\/e\/movie\/'.$imdb;
 $server8 = 'https:\/\/embedforfree.co\/imdb?id='.$imdb;
 $server9 = 'https:\/\/gomo.to\/movie\/'.$imdb;
-<<<<<<< HEAD
-
-=======
-//$server8 = 'https:\/\/movies.nontongo.win\/imdb?id='.$imdb; //indi
-//$server9 = 'https:\/\/embed.warezcdn.net\/filme\/'.$imdb; //pt-BR
->>>>>>> main
 ?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
@@ -46,11 +34,9 @@ $server9 = 'https:\/\/gomo.to\/movie\/'.$imdb;
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<<<<<<< HEAD
+
 		<script src='https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js?ver=3.5.1'></script>
-=======
 		<script src='//cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js?ver=3.5.1'></script>
->>>>>>> main
 		<script src='<?php echo esc_url( get_template_directory_uri() ); ?>/assets/js/player.js?ver=3.8.5'></script>
 		<link href='<?php echo esc_url( get_template_directory_uri() ); ?>/assets/css/player.css?ver=3.8.5' rel='stylesheet' type='text/css' media='all' />
 		<style>#loader-wrapper{background-image:url(<?php echo $cover3;?>)!important;background-position:center center;background-repeat:no-repeat;background-attachment:fixed;background-size:cover;background-color:#000}</style>
