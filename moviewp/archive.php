@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @author: VincenzoPiromalli
+ * @author: fr0zen
  * @author URI: https://fr0zen.shop/
  * @copyright: (c) 2021 Vincenzo Piromalli. All rights reserved
  * ----------------------------------------------------
