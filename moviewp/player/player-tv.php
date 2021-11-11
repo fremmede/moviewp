@@ -17,11 +17,8 @@ $season = $_GET['s'];
 $episode = $_GET['e'];
 $string = 'emarfi';
 $film = strrev ( $string );
-
 $backdrop_path = esc_html(get_post_meta($post_id, 'backdrop_path', true));
 $cover3 = 'https://image.tmdb.org/t/p/w1280' . $backdrop_path;
-
-//servers
 $server1 = 'https:\/\/www.2embed.ru\/embed\/tmdb\/tv?id='.$tmdb.'&s='.$season.'&e='.$episode.'';
 $server2 = 'https:\/\/moviewp.com\/se.php?video_id='.$tmdb.'&tmdb=1&s='.$season.'&e='.$episode;
 $server3 = 'https:\/\/vidcloud.stream\/series\/'.$imdb.'\/'.$season.'\/'.$episode.'.html';
