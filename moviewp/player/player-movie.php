@@ -33,10 +33,8 @@ $server9 = 'https:\/\/gomo.to\/movie\/'.$imdb;
 		<meta charset="<?php bloginfo('charset'); ?>">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
-		<script src='https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js?ver=3.5.1'></script>
-		<script src='//cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js?ver=3.5.1'></script>
+		
+        <script src='https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js?ver=3.5.1'></script>
 		<script src='<?php echo esc_url( get_template_directory_uri() ); ?>/assets/js/player.js?ver=3.8.5'></script>
 		<link href='<?php echo esc_url( get_template_directory_uri() ); ?>/assets/css/player.css?ver=3.8.5' rel='stylesheet' type='text/css' media='all' />
 		<style>#loader-wrapper{background-image:url(<?php echo $cover3;?>)!important;background-position:center center;background-repeat:no-repeat;background-attachment:fixed;background-size:cover;background-color:#000}</style>
@@ -69,10 +67,10 @@ $server9 = 'https:\/\/gomo.to\/movie\/'.$imdb;
 			<script>
 				var s = {"Server1":"<?php echo $server1; ?>","Server2":"<?php echo $server2; ?>","Server3":"<?php echo $server3; ?>","Server4":"<?php echo $server4; ?>","Server5":"<?php echo $server5; ?>","Server6":"<?php echo $server6; ?>","Server7":"<?php echo $server7; ?>","Server8":"<?php echo $server8; ?>","Server9":"<?php echo $server9; ?>"};
 			</script>
-	</body>
-</html>
-<?php
-} else {
-echo "Missing video_id";
-}
+		</body>
+	</html>
+	<?php
+		} else {
+		echo "Missing video_id";
+	}
 ?>
