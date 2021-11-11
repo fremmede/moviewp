@@ -1,17 +1,17 @@
 /*
 Theme Name: moviewp
-Theme URI: https://github.com/VincenzoPiromalli/moviewp
-Author: VincenzoPiromalli
-Author URI: https://github.com/VincenzoPiromalli
-Support:  https://github.com/VincenzoPiromalli
+Theme URI: https://fr0zen.shop/product/moviewp/
+Author: fr0zen
+Author URI: https://fr0zen.shop/
+Support:  https://fr0zen.shop/contact/
 Description: Write reviews, add video streaming, or create a Movie and TV Show database with MovieWP theme.
 Tags: theme-options, left-sidebar, full-width-template, grid-layout, entertainment
 Version: 3.8.5
 Requires at least: 5.3
-Tested up to: 5.8.1
+Tested up to: 5.8
 Requires PHP: 7.0
-License:        GNU General Public License v2 or later
-License URI:    https://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 Text Domain: moviewp
 */
 
@@ -58,6 +58,15 @@ Text Domain: moviewp
 	margin: 0 !important;
 	max-height: 1em;
 	}
+.wp-footer {
+	position: absolute!important;
+	text-align: center;
+	z-index: 1;
+	width: 100%;
+	left: 0;
+	margin: auto;
+	color: rgba(255, 255, 255, 0.71)
+}
 blockquote.left {
 	margin-right: 20px;
 	text-align: right;
@@ -87,5 +96,16 @@ blockquote.right {
 .bypostauthor {}
 .sticky {}
 #wp-admin-bar-menus {display:none;}
+footer {
+	bottom: 5px;
+	height: 20px;
+	vertical-align: middle;
+	position: absolute;
+	width: 100%;
+	left: 0;
+	margin: auto
+}
+
+
 
 

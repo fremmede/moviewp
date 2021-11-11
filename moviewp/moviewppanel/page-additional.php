@@ -1,12 +1,12 @@
 <?php
 /*
 * ----------------------------------------------------
-* @author: VincenzoPiromalli
-* @author URI: https://github.com/VincenzoPiromalli
+* @author: fr0zen
+* @author URI: https://fr0zen.shop/
 * @copyright: (c) 2021 Vincenzo Piromalli. All rights reserved
 * ----------------------------------------------------
 * @since 3.8.5
-* 18 settembre 2021
+* 9 november 2021
 */
 
 /* Exit if accessed directly */
@@ -90,11 +90,11 @@ get_template_part('moviewppanel/header'); ?>
 				<input type="checkbox" <?php if (get_option('moviewppanel_sortby') == 1) { ?> checked="checked" <?php } ?> value="1" id="moviewppanel_sortby" name="moviewppanel_sortby">
 				<span class="mark"><?php echo __('Sort by', 'moviewp'); ?></span>
 			</label>
-			<label class="checkbox" for="moviewppanel_quality">
+			<!--<label class="checkbox" for="moviewppanel_quality">
 				<input type="hidden" value="0" name="moviewppanel_quality">
 				<input type="checkbox" <?php if (get_option('moviewppanel_quality') == 1) { ?> checked="checked" <?php } ?> value="1" id="moviewppanel_quality" name="moviewppanel_quality">
 				<span class="mark"><?php echo __('Quality', 'moviewp'); ?></span>
-			</label>
+			</label>-->
 			<label class="checkbox" for="moviewppanel_letter">
 				<input type="hidden" value="0" name="moviewppanel_letter">
 				<input type="checkbox" <?php if (get_option('moviewppanel_letter') == 1) { ?> checked="checked" <?php } ?> value="1" id="moviewppanel_letter" name="moviewppanel_letter">

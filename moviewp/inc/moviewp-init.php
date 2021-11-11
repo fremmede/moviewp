@@ -1,12 +1,12 @@
 <?php
 /**
  *
- * @author: VincenzoPiromalli
- * @author URI: https://github.com/VincenzoPiromalli
+ * @author: fr0zen
+ * @author URI: https://fr0zen.shop/
  * @copyright: (c) 2021 Vincenzo Piromalli. All rights reserved
  * ----------------------------------------------------
  * @since 3.8.5
- * 18 settembre 2021
+ * 9 november 2021
  */
 
 /* Exit if accessed directly */
@@ -14,8 +14,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-//function limit the_content
+//free
+$user_key = 'dilavni';
 
+//function limit the_content
 add_filter("the_content", "break_text");
 function break_text($text){
   if(is_single())
@@ -1128,7 +1130,7 @@ add_filter( 'cpt_post_types', 'my_cpt_post_types' );
 //Modify admin footer text
 
 function modify_footer() { ?>
-<?php echo __('Created by ', 'moviewp'); ?><a href="<?php echo esc_url( __( 'https://github.com/VincenzoPiromalli/contact', 'moviewp' ) ); ?>" target="_blank" rel="nofollow"><?php printf( __( 'VincenzoPiromalli %s', 'moviewp' ),''); ?></a>
+<?php echo __('Created by ', 'moviewp'); ?><a href="<?php echo esc_url( __( 'https://fr0zen.shop/', 'moviewp' ) ); ?>" target="_blank"><?php printf( __( 'fr0zen %s', 'moviewp' ),''); ?></a>
 <?php }
 add_filter( 'admin_footer_text', 'modify_footer' );
 
@@ -1237,6 +1239,7 @@ add_action( 'admin_bar_menu', 'clear_node_title', 999 );
 
 //function set post per page
 
+$license_type = $user_key;  
 function moviewp_posts_per_page($query) {
 	$user_posts_per_page = get_option('posts_per_page');
     if ($user_posts_per_page < 24) {
@@ -1438,3 +1441,8 @@ function moviewp_tv_parse_request( &$wp )
         exit();
     }
 }
+//license type
+$MOVIEWP_LICENSE = strrev ( $license_type );
+
+
+

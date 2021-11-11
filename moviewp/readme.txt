@@ -1,8 +1,8 @@
 === MovieWP ===
 
-Author: VincenzoPiromalli
+Author: fr0zen
 Requires at least: 5.3
-Tested up to: 5.8.1
+Tested up to: 5.8
 Requires PHP: 7.0
 Stable tag: 3.8.5
 License: GNU General Public License v2 or later
@@ -196,5 +196,8 @@ Removed by the author.
 - Fixed: JS
 - Updated: CSS
 - Updated: Autoembed
+- Updated: Added streamio CDN videos API (ad free)
+- Updated: Added multiple captions to streamio movies autoembed
+- Updated: Added multiple captions to streamio series autoembed
 
 

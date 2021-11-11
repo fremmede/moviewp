@@ -446,6 +446,7 @@ ul {
     font-size: 30px;
     font-weight: 700;
     line-height: 1.5em;
+    letter-spacing: -2px;
     -moz-font-smoothing: antialiased;
     -webkit-font-smoothing: antialiased;
     -webkit-font-smoothing: subpixel-antialiased;
@@ -453,7 +454,8 @@ ul {
 
 #main #main-header .logo.txt span {
     color: #ff7800;
-}
+    background: none!important;
+    }
 
 #main #main-header .main-nav {
     float: left;
@@ -9229,4 +9231,7 @@ li#views span {
 li#views span:hover {
     color: #fff;
     background: rgba(0, 0, 0, 0.1);
+}
+.powered-by {
+    display: none!important;
 }

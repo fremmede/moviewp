@@ -7,8 +7,8 @@
  * @package moviewp
  * @since moviewp 3.8.5
  *
- * @author: VincenzoPiromalli
- * @author URI: https://github.com/VincenzoPiromalli
+ * @author: fr0zen
+ * @author URI: https://fr0zen.shop/
  * @copyright: (c) 2021 Vincenzo Piromalli. All rights reserved
  * ----------------------------------------------------
  * 
@@ -39,7 +39,3 @@ require_once get_template_directory() . '/inc/moviewp-minifier.php';
 require_once get_template_directory() . '/inc/moviewp-transient.php';
 require_once get_template_directory() . '/inc/moviewp-customizer.php';
 //here your code
-
-
-
-

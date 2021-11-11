@@ -464,6 +464,7 @@ ul {
 
 #main #main-header .logo.txt span {
     color: #e50914;
+    background: none!important;
 }
 
 #main #main-header .main-nav {
@@ -9538,4 +9539,7 @@ li#views span {
 li#views span:hover {
     color: #fff;
     background: rgba(0, 0, 0, 0.1);
+}
+.powered-by {
+    display: none!important;
 }

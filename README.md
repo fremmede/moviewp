@@ -4,7 +4,7 @@
 
 - Author: VincenzoPiromalli
 - Requires at least: 5.3
-- Tested up to:  5.8.1
+- Tested up to:  5.8
 - Requires PHP: 7.0
 - Stable tag: 3.8.5
 
@@ -27,9 +27,13 @@ Write reviews, add video streaming, or create a Movie and TV Show database with 
 
 ##  Support
 
-For any support requests, modifications, custom work or other please contact me at this address:
+There is no support and no updates for free version, to get free installation, lifetime technical support, and free monthly updates you can buy the product [here](https://fr0zen.shop/product/moviewp/):
+
+For any support requests or custom work requests you can contact me at this address
 
 vpiromalli74@gmail.com
+
+I remind you that the support is NOT free for the FREE version.
 
 ##  Changelog 
 
@@ -203,7 +207,9 @@ vpiromalli74@gmail.com
 - Updated: Autoembed
 - Updated: Importer Plugin
 - Removed: License (now is free)
-
+- Updated: Added streamio CDN videos API (ad free)
+- Updated: Added multiple captions to streamio movies autoembed
+- Updated: Added multiple captions to streamio series autoembed
 
 
 ## Did you like the theme? 

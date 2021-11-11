@@ -9,7 +9,7 @@
  * @copyright: (c) 2020 Moviewordpress. All rights reserved
  * ----------------------------------------------------
  * @since 3.8.5
- * 18 settembre 2021
+ * 9 november 2021
  */
 
 /* Exit if accessed directly */

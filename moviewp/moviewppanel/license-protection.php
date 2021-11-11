@@ -1,12 +1,12 @@
 <?php
 /*
 * ----------------------------------------------------
-* @author: VincenzoPiromalli
-* @author URI: https://github.com/VincenzoPiromalli
+* @author: fr0zen
+* @author URI: https://fr0zen.shop/
 * @copyright: (c) 2021 Vincenzo Piromalli. All rights reserved
 * ----------------------------------------------------
 * @since 3.8.5
-* 18 settembre 2021
+* 9 november 2021
 */
 
 /* Exit if accessed directly */
@@ -430,6 +430,3 @@ define	('txtcomments', html_entity_decode(stripslashes_deep($moviewp_txtcomments
  } else { 
 define	('txtcomments', 'Comments'); 
 } 
-
-define('KEY_CODE', MOVIEWP_LICENSE);
-$LICENSE_KEY = KEY_CODE;

@@ -2,12 +2,12 @@
 /*
  * Displays the header
  * ----------------------------------------------------
- * @author: VincenzoPiromalli
- * @author URI: https://github.com/VincenzoPiromalli
+ * @author: fr0zen
+ * @author URI: https://fr0zen.shop/
  * @copyright: (c) 2021 Vincenzo Piromalli. All rights reserved
  * ----------------------------------------------------
  * @since 3.8.5
- * 18 settembre 2021
+ * 9 november 2021
  */
 
 /* Exit if accessed directly */

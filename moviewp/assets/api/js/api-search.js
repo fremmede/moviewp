@@ -464,7 +464,7 @@ jQuery(document).ready(function ($) {
                     });
                   }),
                   $.getJSON(
-                    "https://omdbapi.com/?apikey=b9bd48a6&type=series&i=" +
+                    "https://omdbapi.com/?apikey=8a3dc10f&type=series&i=" +
                       o,
                     function (e) {
                       $.each(e, function (e, t) {

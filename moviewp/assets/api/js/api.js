@@ -231,7 +231,7 @@ jQuery(document).ready(function($) {
                         $("#youtube_id input").val(a.slice(0, 13));
                 });
             }),
-            $.getJSON("https://omdbapi.com/?apikey=b9bd48a6&type=series&i=" + external, function(tmdbdata) {
+            $.getJSON("https://omdbapi.com/?apikey=8a3dc10f&type=series&i=" + external, function(tmdbdata) {
                     $.each(tmdbdata, function(key, val) {
                     "Country" == key && $("#new-tag-" + Xcountry).val(val);
                     //"Rated" == key && $('#Rated input').val(val);

@@ -505,6 +505,7 @@ ul {
     font-size: 30px;
     font-weight: 700;
     line-height: 1.5em;
+    letter-spacing: -2px;
     -moz-font-smoothing: antialiased;
     -webkit-font-smoothing: antialiased;
     -webkit-font-smoothing: subpixel-antialiased;
@@ -512,6 +513,7 @@ ul {
 
 #main #main-header .logo.txt span {
     color: #298eea;
+    background: none!important;
 }
 
 #main #main-header .main-nav {
