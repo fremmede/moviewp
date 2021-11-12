@@ -33,7 +33,7 @@ $server9 = 'https:\/\/gomo.to\/movie\/'.$imdb;
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		
-        <script src='https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js?ver=3.5.1'></script>
+                <script src='https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js?ver=3.5.1'></script>
 		<script src='<?php echo esc_url( get_template_directory_uri() ); ?>/assets/js/player.js?ver=3.8.5'></script>
 		<link href='<?php echo esc_url( get_template_directory_uri() ); ?>/assets/css/player.css?ver=3.8.5' rel='stylesheet' type='text/css' media='all' />
 		<style>#loader-wrapper{background-image:url(<?php echo $cover3;?>)!important;background-position:center center;background-repeat:no-repeat;background-attachment:fixed;background-size:cover;background-color:#000}</style>
