@@ -18,7 +18,6 @@ $string = 'emarfi';
 $film = strrev ( $string );
 $server1 = 'https:\/\/www.2embed.ru\/embed\/imdb\/movie?id='.$imdb;
 $server2 = 'https:\/\/vidcloud.stream\/'.$imdb.'.html'; 
-$server2 = 'https:\/\/vidcloud.stream\/'.$imdb.'.html'; 
 $server3 = 'https:\/\/v2.vidsrc.me\/embed\/'.$imdb.'\/';
 $server4 = 'https:\/\/moviewp.com\/se.php?video_id='.$imdb;
 $server5 = 'https:\/\/curtstream.com\/movies\/imdb\/'.$imdb.'\/';
