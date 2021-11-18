@@ -27,7 +27,7 @@ Write reviews, add video streaming, or create a Movie and TV Show database with 
 
 ##  Support
 
-There is no support and no updates for free version, to get free installation, lifetime technical support, and free monthly updates you can buy the product [here](https://fr0zen.shop/product/moviewp/):
+There is no support and no updates for free version, to get free installation, lifetime technical support, and free monthly updates you can buy the product [here](https://fr0zen.shop/product/moviewp/)
 
 For any support requests or custom work requests you can contact me at this address
 
