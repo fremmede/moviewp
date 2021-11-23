@@ -206,11 +206,6 @@ I remind you that the support is NOT free for the FREE version.
 - Updated: CSS
 - Updated: Autoembed
 - Updated: Importer Plugin
-- Removed: License (now is free)
-- Updated: Added streamio CDN videos API (ad free)
-- Updated: Added put.io server for movies (High Quality .mp4 videos)
-- Updated: Added multiple captions to streamio movies autoembed
-- Updated: Added multiple captions to streamio series autoembed
 
 
 ## Did you like the theme? 
