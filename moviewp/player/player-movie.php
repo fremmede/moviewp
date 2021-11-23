@@ -23,10 +23,7 @@ $server4 = 'https:\/\/moviewp.com\/se.php?video_id='.$imdb;
 $server5 = 'https:\/\/curtstream.com\/movies\/imdb\/'.$imdb.'\/';
 $server6 = 'https:\/\/databasegdriveplayer.co\/player.php?imdb='.$imdb;
 $server7 = 'https:\/\/apimdb.net\/e\/movie\/'.$imdb;
-$server8 = 'https:\/\/embedforfree.co\/imdb?id='.$imdb;
-$server9 = 'https:\/\/gomo.to\/movie\/'.$imdb;
-$server10 = 'https:\/\/vidcloud.stream\/hd\/'.$imdb.'.html';
-$server11 = 'https:\/\/vostfree.online\/vidembed\/'.$imdb.'.html';
+$server8 = 'https:\/\/gomo.to\/movie\/'.$imdb;
 ?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
@@ -47,16 +44,13 @@ $server11 = 'https:\/\/vostfree.online\/vidembed\/'.$imdb.'.html';
 					<a href="javascript:void(0)" id="show-server" title="<?php echo esc_attr__( 'Servers', 'moviewp' ) ?>"></a>
 					<ul class="list-server-items">
 						<li onclick="loadServer(s.Server1)" class="active"><?php echo esc_html__('2embed', 'moviewp'); ?></li>
-						<li onclick="loadServer(s.Server2)"><?php echo esc_html__('stremio', 'moviewp'); ?></li>
+						<li onclick="loadServer(s.Server2)"><?php echo esc_html__('Vidcloud', 'moviewp'); ?></li>
 						<li onclick="loadServer(s.Server3)"><?php echo esc_html__('vidsrc', 'moviewp'); ?></li>
 						<li onclick="loadServer(s.Server4)"><?php echo esc_html__('superembed', 'moviewp'); ?></li>
 						<li onclick="loadServer(s.Server5)"><?php echo esc_html__('curtstream', 'moviewp'); ?></li>
 						<li onclick="loadServer(s.Server6)"><?php echo esc_html__('gdriveplayer', 'moviewp'); ?></li>
 						<li onclick="loadServer(s.Server7)"><?php echo esc_html__('apimdb', 'moviewp'); ?></li>
-						<li onclick="loadServer(s.Server8)"><?php echo esc_html__('embedforfree', 'moviewp'); ?></li>
 						<li onclick="loadServer(s.Server9)"><?php echo esc_html__('gomoto', 'moviewp'); ?></li>
-						<li onclick="loadServer(s.Server10)"><?php echo esc_html__('put.io', 'moviewp'); ?></li>
-						<li onclick="loadServer(s.Server11)"><?php echo esc_html__('vidembed', 'moviewp'); ?></li>
 					</ul>
 				</div>
 				<div id="load-iframe">
@@ -68,7 +62,7 @@ $server11 = 'https:\/\/vostfree.online\/vidembed\/'.$imdb.'.html';
 			</div>
 			</div>
 			<script>
-				var s = {"Server1":"<?php echo $server1; ?>","Server2":"<?php echo $server2; ?>","Server3":"<?php echo $server3; ?>","Server4":"<?php echo $server4; ?>","Server5":"<?php echo $server5; ?>","Server6":"<?php echo $server6; ?>","Server7":"<?php echo $server7; ?>","Server8":"<?php echo $server8; ?>","Server9":"<?php echo $server9; ?>","Server10":"<?php echo $server10; ?>","Server11":"<?php echo $server11; ?>"};
+				var s = {"Server1":"<?php echo $server1; ?>","Server2":"<?php echo $server2; ?>","Server3":"<?php echo $server3; ?>","Server4":"<?php echo $server4; ?>","Server5":"<?php echo $server5; ?>","Server6":"<?php echo $server6; ?>","Server7":"<?php echo $server7; ?>","Server8":"<?php echo $server8; ?>"};
 			</script>
 		</body>
 	</html>
