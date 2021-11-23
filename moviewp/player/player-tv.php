@@ -50,7 +50,7 @@ $server10= 'https:\/\/curtstream.com\/series\/tmdb\/'.$tmdb.'\/'.$season.'\/'.$e
 					<ul class="list-server-items">
 						<li onclick="loadServer(s.Server1)" class="active"><?php echo esc_html__('2embed', 'moviewp'); ?></li>
 						<li onclick="loadServer(s.Server2)"><?php echo esc_html__('superembed', 'moviewp'); ?></li>
-						<li onclick="loadServer(s.Server3)"><?php echo esc_html__('stremio', 'moviewp'); ?></li>
+						<li onclick="loadServer(s.Server3)"><?php echo esc_html__('vidcloud', 'moviewp'); ?></li>
 						<li onclick="loadServer(s.Server4)"><?php echo esc_html__('apimdb', 'moviewp'); ?></li>
 						<li onclick="loadServer(s.Server5)"><?php echo esc_html__('gdriveplayer', 'moviewp'); ?></li>
 						<li onclick="loadServer(s.Server6)"><?php echo esc_html__('vidsrc', 'moviewp'); ?></li>
