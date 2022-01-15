@@ -23,7 +23,13 @@ Write reviews, add video streaming, or create a Movie and TV Show database with 
 
 ##  Demo
 
-[Live Demo](https://moviewp.com/)
+[moviewp](https://moviewp.com/)
+
+original demo (movies & tv series)
+
+[vostfree](https://vostfree.online/)
+
+customer demo (anime)
 
 ##  Support
 
