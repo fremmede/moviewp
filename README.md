@@ -1,4 +1,4 @@
-![MovieWP](https://i.imgur.com/QyJOg4z.png)
+![MovieWP](https://i.imgur.com/KCUcJOz.png)
 
 ##  MovieWP 
 
