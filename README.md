@@ -303,6 +303,27 @@ I remind you that the support is NOT free for the FREE version.
 - Updated: Autoembed
 - Updated: Importer Plugin
 
+= 3.8.6 =
+
+- Fixed: pages
+- Fixed: JS
+- Updated: CSS
+- Updated: Autoembed
+
+= 3.8.7 =
+
+- Added: Full WordPress 6.0 compatibility.
+- Added: Multiple sliders on home page with new layout.
+- Added: Blog
+- Added: Moies Collections page.
+- Added: Collection tag below the description of the movies (if the collection exists).
+- Added: TV Networks page
+- Fixed: Sidebar scroll
+- Updated: Importer
+- Updated: Autoembed
+- Updated: JS
+- Updated: CSS
+
 
 ## Did you like the theme? 
 
