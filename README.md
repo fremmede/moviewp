@@ -1,6 +1,6 @@
 ![MovieWP](https://i.imgur.com/KCUcJOz.png)
 
-##  MovieWP 
+##  MovieWP 3.8.7
 
 - Author: VincenzoPiromalli
 - Requires at least: 5.3
