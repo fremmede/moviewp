@@ -4,14 +4,104 @@
 
 - Author: VincenzoPiromalli
 - Requires at least: 5.3
-- Tested up to:  5.8
-- Requires PHP: 7.0
-- Stable tag: 3.8.5
+- Tested up to:  6.1
+- Requires PHP: 7.3
+- Stable tag: 3.8.7
 
 
 ##  Description 
 
-Write reviews, add video streaming, or create a Movie and TV Show database with MovieWP theme.
+MovieWP is an impressive theme. Its flexible design and robust feature set make it adaptable for many movie sites.
+Perhaps the coolest feature in MovieWP is the TMDB and IMDb importer which lets you quickly build your own movie directory.
+With its importing tools and modern design, MovieWP is a great choice for making a movie and tv show portal site with trailers, ratings, and video streaming.
+
+##  Native WordPress Code
+
+Extra powerful, sharp and diverse native WordPress theme with clean and tidy design.
+
+##  Admin panel
+
+Rich theme options to customize your site according to your need, you can change and modify as many settings as you like with the powerful admin panel built into the theme.
+
+##  9 different CSS styles
+
+You can change the theme color by choosing from the 9 available colors or you can also change the theme colors, logo, favicon, full width/boxed using the wordpress customizer.
+
+##  Rich typography
+
+Choose from the huge list of google font the one that fits with your web style.
+
+##  Fully Responsive
+
+This theme looks amazing either on phone, pc, tablet and console, so you don’t have to worry about it.
+
+##  Seo Optimized
+
+If your SEO WordPress theme isn’t optimized for SEO its pages will struggle to rank well in SERPs.
+
+##  Optimized Speed
+
+The theme has been optimized, with a better speed than other movie and series themes, to leave your visitors with a good experience.
+
+##  Translatable
+
+You can translate the theme into any language in the world in seconds thanks to the translate function of the theme.
+
+##  One click data generator
+
+Create your posts with a single mouse click! You will not have to worry about anything, just enter the IMDb id of the movie or the TMDb id of the tv show and the posts will be automatically created in a second.
+
+##  Celebrities
+
+The pages of directors, actors and TV series creators are automatically generated! You don’t have to waste precious time, it will do the whole theme automatically.
+
+##  Choose the Resolution
+
+With the switch player module you can choose whether to display videos in various resolutions, 1080p & 720p.
+
+##  Multiserver
+
+With the new multiserver function you can now add up to 10 different video streaming sources for each movie!
+
+##  Multidownload
+
+With the new multidownload function you can now add up to 10 different video download sources for each movie!
+
+##  Filter your Movies and TV series
+
+We’ve also introduced features like sort by: most rated, most viewed, most liked, random, title, and release date.
+
+##  Alphabetical search
+
+Quickly search for your favorite movies or TV series by pressing the initial letter.
+
+##  Advanced AJAX Live Search
+
+Search in movies, tv series, actors, directors and more with advanced caching technology an poster image precaching.
+
+##  Admin Post TMDB ajax search Movie & TV Show generator (NEW!)
+
+Search and automatically create movies and TV series directly from the post editor using the new TMDB ajax search generator, it takes less than a second, just type in the title of the movie or TV series and click on the result.
+
+##  Import movies
+
+With the new IMPORTER plugin included in the theme, you can instantly import movies from the largest online movie database, with just one click, with no credit system, no connection to any server (like dbmvs for example), whenever you want and as many times as you want, forever.
+
+##  Grid/list view layout
+
+Make the experience unique and enjoyable by letting your visitors decide whether to view the site in grid or list mode.
+
+##  Like button
+
+Lets your visitors like your movies & series without registration!
+
+##  User favorite
+
+Users are able to add movies and TV show to their favorite without registration.
+
+##  Autoembed
+
+Auto embed thousands of movies & tv shows available on multiple servers, lets your visitors choose from popular video streaming servers. With the autoembed module you will never have to take care of uploading movies or searching links. Provide fresh and working links with the best available quality from multiple servers with multiple subtitles and languages.
 
 ##  Installation 
 
