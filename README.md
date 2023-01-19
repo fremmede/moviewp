@@ -117,9 +117,9 @@ Auto embed thousands of movies & tv shows available on multiple servers, lets yo
 
 original demo (movies & tv series)
 
-[vostfree](https://vostfree.online/)
+##  youtube
 
-customer demo (anime)
+[![moviewp](https://i.imgur.com/fi81azx.png)](https://www.youtube.com/watch?v=QwjLnsRYjdw)
 
 ##  Support
 
@@ -325,7 +325,4 @@ I remind you that the support is NOT free for the FREE version.
 - Updated: CSS
 
 
-## Did you like the theme? 
 
-Buy me a coffee!
-Send some bitcoins at this address: 39geNaAj9nmYhBRpejN8hTQchrnZJxiCiy
