@@ -1,0 +1,151 @@
+/*
+* ----------------------------------------------------
+* @author: Moviewordpress
+* @author URI: http://moviewordpress.com/
+* @copyright: (c) 2020 Moviewordpress. All rights reserved
+* ----------------------------------------------------
+* @since 3.8
+* @15 novembre 2020
+* @Custom work for animemghd@gmail.com
+*/
+
+.moviewp-report-movie-box {
+    margin-top: 10px;
+    display: none;
+    background-color: #34495e;
+    padding: 16px !important;
+    border: 2px solid #34495e;
+    font-size: 100%;
+    text-transform: none;
+    border-radius: 5px 5px 0 0;
+    margin-bottom: 20px;
+}
+
+.moviewp-report-movie-box a {
+    font-size: 13px !important;
+}
+
+.moviewp-report-movie-form {
+    padding: 0;
+    margin: 0;
+}
+
+.moviewp-report-movie-label-left {
+    margin-right: 20px;
+    font-size: 12px;
+}
+
+#moviewp-report-movie-form>div:nth-child(5)>div>label {
+    margin-right: 20px;
+    font-size: 12px;
+}
+
+.moviewp-report-movie-form span.required {
+    font-size: 16px;
+}
+
+.moviewp-report-movie-form input[type="text"] {
+    width: 100%;
+    border-radius: 3px;
+}
+
+.moviewp-report-movie-form textarea {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 97%;
+    margin: 8px;
+    border-radius: 3px;
+    resize: none;
+}
+
+.moviewp-report-movie-form textarea:focus {
+    outline: none !important;
+}
+
+.moviewp-report-movie-form input[type="text"]:focus {
+    outline: none !important;
+}
+
+.moviewp-report-movie-sign {
+    margin-bottom: 3px;
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.moviewp-report-movie-msg {
+    margin-bottom: 10px;
+    color: red;
+    display: none;
+}
+
+.moviewp-report-movie-form-left {
+    width: 48%;
+    float: left;
+    margin-left: 5px !important;
+}
+
+.moviewp-report-movie-row {
+    margin-bottom: 10px;
+}
+
+.clear-both {
+    clear: both;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.moviewp-report-movie-error {
+    background-color: #fff0f0;
+    border-color: red;
+}
+
+.moviewp-report-movie-sent {
+    display: none;
+}
+
+.moviewp-report-movie-sent p {
+    margin: 0;
+    margin-bottom: 16px;
+}
+
+/* Buttons */
+.moviewp-report-movie-button {
+    position: relative;
+    overflow: visible;
+    display: inline-block;
+    padding: 0.5em 1em;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    color: #fff !important;
+    white-space: nowrap;
+    cursor: pointer;
+    outline: none;
+    background-color: #298eea;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.moviewp-report-movie-button:hover,
+.moviewp-report-movie-button:focus,
+.moviewp-report-movie-button:active {
+    background: rgb(0 0 0 / 27%);
+}
+
+.moviewp-report-movie-button:active,
+.moviewp-report-movie-button.active {
+    background: rgb(0 0 0 / 27%);
+}
+
+/* overrides extra padding on button elements in Firefox */
+.moviewp-report-movie-button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}

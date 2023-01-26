@@ -1,0 +1,340 @@
+#autoembed {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    transition: all .3s ease-in-out;
+    transform: translateY(100%);
+    background: #000;
+}
+
+#autoembed.active {
+    transform: translateY(0);
+}
+
+#autoembed iframe {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+}
+
+#mainautoembed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 300;
+    transition: all .3s ease-in-out;
+    will-change: transform;
+    background-color: rgb(255 255 255 / 0%);
+}
+
+#mainautoembed.hidden {
+    transform: translateY(-100%);
+}
+
+#showMainButton {
+    position: absolute;
+    width: 180px;
+    height: 50px;
+    text-align: center;
+    left: calc(50% - 90px);
+    bottom: -50px;
+    box-shadow: 0 0 30px 0 rgba(0,0,0,0.5);
+    line-height: 40px;
+    border-radius: 0 0 25px 25px;
+    background-color: #151111;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    z-index: 900;
+}
+
+#backgroundautoembed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    opacity: 0.2;
+}
+
+.noPlayers {
+    position: relative;
+    display: block;
+    width: 300px;
+    height: 300px;
+    margin: 0px auto;
+}
+
+.noPlayers .icon {
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: 0px auto;
+}
+
+.noPlayers .icon path {
+    fill: #FFF;
+}
+
+.noPlayers .title {
+    font-size: 22px;
+    margin-top: 15px;
+}
+
+.noPlayers .sub {
+    font-size: 14px;
+}
+
+#selectPlayer {
+	position: absolute;
+	top: calc(55% - 200px);
+    left: calc(50% - 200px);
+    width: 400px;
+    height: 400px;
+    text-align: center;
+    transition: all .3s ease-in-out;
+   
+}
+
+#selectPlayer.hidden {
+    top: -500px;
+    visibility: hidden;
+    opacity: 0;
+}
+
+#selectPlayer .selectAudio {
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+#selectPlayer .buttonList {
+    display: block;
+    font-size: 0;
+    position: relative;
+}
+
+#selectPlayer .selectAudioButton {
+    width: 170px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background: rgb(59, 64, 78);
+    opacity: 0.9;
+    color: #fff;
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 25px;
+    box-shadow: 0 0 30px 0 rgba(0,0,0,0.3);
+    text-align: center;
+    font-size: 12px;
+    letter-spacing: 2px;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
+
+#selectPlayer .selectAudioButton.active {
+    background: rgb(120, 224, 143);
+    color: #000;
+    font-weight: 600;
+    opacity: 1;
+}
+
+#selectPlayer .selectAudioButton.active:hover {
+    background: rgb(160, 244, 143);
+}
+
+#selectPlayer .selectAudioButton:hover {
+    opacity: 1;
+    box-shadow: 0 0 30px 0 rgba(0,0,0,0.5);
+}
+
+#selectPlayer .hostListSelector {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    transition: all .3s ease-in-out;
+}
+
+#selectPlayer .hostList {
+    
+    top: 110px;
+    left: 15px;
+    transition: all .3s ease-in-out;
+    width: 400px;
+    height: auto;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(300px);
+}
+
+#selectPlayer .hostList.active {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+}
+
+#selectPlayer .buttonLoadHost {
+    display: block;
+    height: 80px;
+    border-radius: 25px;
+    background: rgb(109 110 110 / 35%);
+    position: relative;
+    margin-bottom: 15px;
+    cursor: pointer;
+    box-shadow: 0 0 30px 0 rgba(0,0,0,0.2);
+    transition: all .2s ease-in-out;
+}
+
+#selectPlayer .buttonLoadHost:hover {
+    background: rgb(185 185 185 / 20%);
+}
+
+#selectPlayer .buttonLoadHost.active {
+    background: transparent;
+    box-shadow: none;
+}
+
+#selectPlayer .buttonLoadHost.active::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    background: rgba(0,0,0,0.2);
+    border: 1px solid rgba(255, 255, 255,0.7);
+}
+
+#selectPlayer .buttonLoadHost i {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 40px;
+    height: 40px;
+    font-size:40px;
+    background-size: cover;
+    background-position: center center;
+    color: #FFF;
+}
+
+#selectPlayer .buttonLoadHost .t {
+    position: absolute;
+    top: 17px;
+    font-weight: 600;
+    font-size: 18px;
+    color: RGB(255, 255, 255);
+    left: 80px;
+}
+
+#selectPlayer .buttonLoadHost .s {
+    position: absolute;
+    top: 42px;
+    font-weight: 300;
+    font-size: 12px;
+    color: RGB(255, 255, 255);
+    opacity: 0.5;
+    left: 80px;
+}
+
+#selectPlayer .chooseOne {
+    font-size: 16px;
+    color: #FFF;
+    font-weight: 400;
+}
+
+.hostListSelector.singleautoembed .hostList {
+    top: 70px!important;
+}
+
+.itemSlider .space {
+    width: 50px;
+    height: 50px;
+    display: block;
+}
+
+@media (max-width: 500px) {
+    #selectPlayer {
+    top: 10px!important;
+    }
+
+    #selectPlayer .selectAudio {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    #selectPlayer .selectAudioButton {
+        height: 40px;
+        line-height: 40px;
+        border-radius: 20px;
+        font-size: 11px;
+        width: 140px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    #selectPlayer .hostList {
+        width: 230px!important;
+        margin: 0 auto;
+    }
+
+
+
+    #selectPlayer .buttonLoadHost {
+        height: 60px;
+        margin-top: 7px;
+        border-radius: 8px;
+    }
+
+    #selectPlayer .buttonLoadHost i {
+        top: 10px;
+        left: 15px;
+        width: 25px;
+        height: 25px;
+    }
+
+    #selectPlayer .buttonLoadHost .t {
+        font-size: 13px;
+        left: 60px;
+        top: 12px;
+        font-weight: 600;
+    }
+
+    #selectPlayer .buttonLoadHost .s {
+        left: 60px;
+        top: 32px;
+        font-size: 11px;
+    }
+
+    #selectPlayer .buttonLoadHost.active::before {
+        border-radius: 8px;
+    }
+
+    #mainautoembed.hidden #selectPlayer .hostListSelector {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .noPlayers {
+        margin-top: 50px;
+    }
+
+    #showMainButton {
+        width: 150px;
+        left: calc(50% - 75px);
+        font-size: 13px;
+        height: 40px;
+        line-height: 40px;
+        bottom: -40px;
+    }
+}
