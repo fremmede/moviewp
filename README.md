@@ -1,12 +1,12 @@
 ![MovieWP](https://i.imgur.com/KCUcJOz.png)
 
-##  MovieWP 3.8.7
+##  MovieWP 3.8.8
 
 - Author: VincenzoPiromalli
 - Requires at least: 5.3
 - Tested up to:  6.1
 - Requires PHP: 7.3
-- Stable tag: 3.8.7
+- Stable tag: 3.8.8
 
 
 ##  Description 
