@@ -1,4 +1,4 @@
-![MovieWP]([https://i.imgur.com/KCUcJOz.png](https://babia.to/attachments/screenshot-torii-dev-2023-04-24-09_29_28-png.196201/))
+![MovieWP]([https://i.imgur.com/KCUcJOz.png])
 
 ##  MovieWP 3.8.7
 
